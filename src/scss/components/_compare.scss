@@ -1,0 +1,26 @@
+.compare {
+	
+	.rubrics__mobile__wrapper {
+
+		@media (max-width: 768px) {
+			margin: 0;
+		}
+	}
+
+	&-main {
+
+		&.content__wrapper__mainpage {
+			@media (max-width: 768px) {
+				padding-top: 0;
+			}
+		}
+
+		.products_catalog__wrapper__mainpage {
+			margin-bottom: 40px;
+			
+			@media (min-width: 992px) {
+				margin-bottom: 60px;
+			}
+		}
+	}
+}

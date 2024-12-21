@@ -1,0 +1,186 @@
+.btn-white {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	background-color: #fff;
+	border-color: #dee2e6;
+
+	@media (min-width: 992px) {
+		font-size: 14px;
+		gap: 10px;
+	}
+
+	@media (max-width: 992px) {
+		padding: 8px 14px;
+	}
+
+	.icon {
+		--_icon-color: #a0a0a0;
+
+		* {
+			transition: none;
+		}
+	}
+
+	&:active {
+		color: #fff;
+		background-color: #ff161f;
+		border-color: #ff161f;
+
+		.icon {
+			--_icon-color: inherit;
+		}
+	}
+
+	@media (hover: hover) {
+		&:is(:hover, :focus-visible) {
+			color: #fff;
+			background-color: #ff161f;
+			border-color: #ff161f;
+
+			.icon {
+				--_icon-color: #fff;
+			}
+		}
+	}
+}
+
+.btn-outline-crimson {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border: 2px solid #ff161f;
+	transition-property: color, background, border;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+
+	@media (min-width: 992px) {
+		font-size: 16px;
+	}
+
+	&:is(:hover, :focus-visible, .active) {
+		color: #fff;
+		background-color: #ff161f;
+	}
+
+	.icon {
+		--_icon-size: 20px;
+
+		svg {
+
+			&,
+			* {
+				transition: none;
+			}
+		}
+	}
+}
+
+.btn-add {
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+
+	@media (min-width: 992px) {
+		width: 50px;
+		height: 50px;
+		padding: 12px;
+	}
+
+	.icon {
+		--_icon-size: 100%;
+
+		svg {
+
+			&,
+			* {
+				transition: none;
+			}
+		}
+	}
+}
+
+.btn-plaintext {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: #A0A0A0;
+	background-color: transparent;
+	padding-inline: 10px;
+
+	@media (min-width: 992px) {
+		font-size: 14px;
+		gap: 10px;
+	}
+
+	@media (max-width: 992px) {
+		padding: 0;
+	}
+
+	.icon {
+		--_icon-color: currentColor;
+
+		* {
+			transition: none;
+		}
+	}
+
+	&:active {
+		color: #ff161f;
+		background-color: transparent;
+	}
+
+	@media (hover: hover) {
+		&:is(:hover, :focus-visible) {
+			color: #ff161f;
+			background-color: transparent;
+		}
+	}
+}
+
+.buttons-filter {
+	
+	@media (min-width: 992px) {
+		max-width: 740px;
+	}
+
+	&,
+	&-srollable {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+
+		@media (min-width: 992px) {
+			gap: 10px;
+		}
+	}
+
+	&-srollable {
+
+		@media (max-width: 992px) {
+			margin-inline: -15px;
+			padding: 0 15px 4px;
+			flex-wrap: nowrap;
+			overflow-y: hidden;
+			overflow-x: auto;
+		}
+
+		> .btn-plaintext {
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+
+	> .btn-plaintext {
+		@media (min-width: 992px) {
+			display: none;
+		}
+	}
+}

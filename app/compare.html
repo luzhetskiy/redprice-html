@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+
+  <!-- (Start) Подключаю стили с сайта -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <!-- (End) Подключаю стили с сайта -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body class="page__body">
+  <div class="site-container">
+    <header>
+  <div class="header___top_panel">
+    <div class="row">
+      <div class="col-8">
+        <ul class="header_btn__wrapper marketplace-city-link">
+          <li>
+            <div class="select-list marketplace-city-select">Самара</div>
+          </li>
+          <li><a class="select-list marketplace-partner-select" href="javascript:void(0)">Партнер: ООО Красная Цена
+              <span class="icon"><img alt="Выберите нужного партнера"
+                  src="https://red-price63.ru/static/assets/images/svg/top-panel/arrow.svg"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <div class="header__right"><a class="authorization-user" href="/users/login/">Вход</a> / <a
+            class="authorization-user" href="/users/signup/">Регистрация <span class="icon"><img alt=""
+                src="https://red-price63.ru/static/users/img/arrow.svg"></span></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="top-header">
+      <div class="top-header__left"><a class="logo logo--min" href="/"><img alt="Логотип"
+            src="https://red-price63.ru/static/assets/images/svg/logotype/headlogo.svg"></a> <a
+          class="logo logo--min header-partner-logo" href="/"><img alt="Логотип партнера"
+            src="https://red-price63.ru/static/assets/images/svg/default_partner_logo.svg"></a> <a class="logomobile"
+          href="/"><img alt="Логотип mobile" src="https://red-price63.ru/static/assets/images/svg/mobilelogo.svg"></a>
+        <div class="header-partner-info">
+          <div class="header-partner-info-top">Будни: 8:30-17:30; Сб-Вс - выходной.</div>
+          <div class="header-partner-info-bottom">Самара, Олимпийская 73А</div>
+        </div>
+      </div>
+      <div class="top-header__right">
+        <div class="header-phone"><span class="icon"><img alt="Телефон"
+              src="https://red-price63.ru/static/assets/images/svg/header/phone.svg"></span> <a
+            class="header-phone__tel" href="tel:+78462673547"><small
+              style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.933333;">8</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;">
+              </small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.866667;">(</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.8;">8</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.733333;">4</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">6</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.6;">)</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;">
+              </small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.533333;">2</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.466667;">6</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.4;">7</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">-</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.266667;">3</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.2;">5</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.133333;">-</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0666667;">4</small><small
+                style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">7</small></small></a>
+          <span class="header-phone__text"></span>
+        </div>
+      </div>
+      <div class="mobile-right">
+        <div class="mobile-right__text">Самара, Олимпийская 73А</div>
+        <div class="burger-menu" onclick="openMobileMenu()">
+          <div class="burger"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu"><span class="discounter-link"></span>
+      <ul class="header_menu">
+        <li><a href="/for-clients/">Для клиентов</a></li>
+        <li><a href="/partnership/">Сотрудничество</a></li>
+        <li><a href="/partner-map-access/">Не франшиза</a></li>
+        <li><a href="/special-offers/">Акции</a></li>
+        <li><a href="/companies/">Честные строители</a></li>
+        <li><a href="/contacts/">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<svg class="hidden" height="0" width="0">
+  <symbol fill="none" id="feedback-phone" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd"
+      d="M20.32 22.522c4.766-4.227 4.45-18.007-.61-21.933-.796-.706-2.492-.535-3.664-.417-.235.023-.45.045-.631.057-2.619-.086-1.69 7.15 1.765 6.817 2.525-.267 2.817 9.335.226 9.166-3.325-.362-3.913 6.823-1.294 6.884.14.003.304.009.484.015 1.141.042 2.956.109 3.724-.59zm-4.186-.426c.171.003.355.01.547.017.468.017.99.037 1.531.007.37-.02.7-.063.967-.133.276-.072.413-.155.468-.205l.01-.009c.996-.883 1.796-2.338 2.329-4.186.529-1.834.77-3.972.714-6.118-.056-2.147-.407-4.265-1.034-6.062-.632-1.81-1.514-3.209-2.57-4.028l-.026-.02-.024-.022c-.066-.058-.204-.136-.47-.195a4.43 4.43 0 0 0-.956-.078c-.507.005-.96.051-1.397.096-.25.025-.496.05-.742.067l-.05.003-.049-.002c-.076-.002-.102.015-.13.039-.047.04-.131.144-.206.362-.154.448-.19 1.147-.044 1.912.146.76.448 1.457.84 1.923.376.444.78.63 1.238.587.672-.07 1.23.208 1.636.6.386.373.66.87.858 1.369.4 1.004.603 2.3.637 3.545.034 1.243-.097 2.548-.446 3.571-.173.509-.425 1.02-.799 1.41-.396.415-.95.708-1.626.663h-.021l-.022-.003c-.405-.044-.75.114-1.073.531-.344.446-.6 1.13-.703 1.89-.102.763-.031 1.478.154 1.957.183.474.37.51.459.512zM.293 11.596l4.243-4.242.707.707-3.036 3.035h10.986v1H2.207l3.036 3.036-.707.707-4.243-4.243z"
+      fill="currentColor" fill-rule="evenodd"></path>
+  </symbol>
+  <symbol fill="none" id="mobile-phone" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M14.569 7.46c-.855-.556-1.51-1.245-1.175-2.042.67-1.595 1.935-5.942 3.968-4.207 1.06.737 2.272 1.749 2.272 1.749s.63.303.773 1.129c1.464 6.052-6.653 16.715-12.838 17.036-.77.05-1.22-.459-1.22-.459s-1.319-.825-2.325-1.656c-1.92-1.607 1.602-3.966 2.98-4.964.56-.543 1.43-.226 2.177.517 1.867 1.7 7.468-5.773 5.388-7.102z"
+      fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" id="search-icon" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="8" cy="8" r="7.5" stroke="#000"></circle>
+    <path d="M12.654 13.977l.707-.707 4.243 4.243-.707.707z" fill="#000"></path>
+  </symbol>
+</svg>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu_title">
+    <div class="mobile-menu_search">
+      <form action="/catalog/catalog_search/" method="get" novalidate=""><input autocomplete="off" class="menu-search"
+          data-mobile="true" data-url="/catalog/search/" name="query" placeholder="Поиск" type="text"><input
+          name="mobile_search" type="hidden" value="true"></form>
+    </div>
+    <div class="mobile-menu_city-nav">
+      <div class="buttons-selection-city">
+        <div class="button-selection-city marketplace-city-select">Город:&nbsp; <span class="name-city">Самара</span>
+        </div><a class="button-selection-partner marketplace-partner-select" href="javascript:void(0)"><span
+            class="button-selection-partner">Партнер: ООО Красная Цена</span></a>
+      </div>
+    </div>
+    <nav class="mobile-menu_menu-nav">
+      <ul class="menu-nav_top-menu">
+        <li class="top-menu_item"><a class="authorization-user" href="/users/login/">Вход / Регистрация <span
+              class="icon"><img alt="" src="https://red-price63.ru/static/users/img/arrow.svg"></span></a></li>
+        <li class="top-menu_item"><input id="list-1" title="" type="checkbox"><label class="side-menu-label"
+            for="list-1">Каталог</label><img alt="" class="top-menu_item_icon"
+            src="https://red-price63.ru/static/assets/images/svg/icon-11.svg" title="">
+          <ul class="menu-nav_bottom-menu">
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/e3b4c2c0421641a1af7f508c1c6f38b7.svg"><a
+                href="/catalog/obshchestroitelnye/">Общестроительные</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/e34a8cb0b8c14727a517a2dd40577e42.svg"><a
+                href="/catalog/pilomaterialy/">Пиломатериалы</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/68afd690b362410f831724d0b1d9e721.svg"><a
+                href="/catalog/krovlia-metallicheskaia/">Кровля металлическая</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/a4f7b43622394bb083e531c7c9bb522e.svg"><a
+                href="/catalog/vodostochnye-sistemy/">Водосточные системы</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/1353c106baa6417bb2f2ffb8e1d902d0.svg"><a
+                href="/catalog/mjagkaya-krovlia/">Мягкая кровля</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/a52e2177117240fcb04187762e553de4.svg"><a
+                href="/catalog/teploizoliatsiia/">Теплоизоляция</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/4b9e35e0a514461c8cc90d9f0f869771.svg"><a
+                href="/catalog/fanera-osb-dsp-dvp-tssp/">Фанера, осб, дсп, двп, цсп</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/cd8be71e2af7492589d8e6950b98c43b.svg"><a
+                href="/catalog/otdelka-chernovaya-cement/">Отделка черновая</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/639910ae5281475195661981fe02d474.svg"><a
+                href="/catalog/otdelka-finishnaia/">Отделка финишная</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/fc219cf05b35440a8edf3e92b0cb77b9.svg"><a
+                href="/catalog/kraski-peny-germetiki/">Краски, пены, герметики</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/faeabf536f654632882d862689db3218.svg"><a
+                href="/catalog/saiding/">Сайдинг</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/b1b7f0ef6e6f43a9ba971283ea27d733.svg"><a
+                href="/catalog/fasad-shtukaturnyi/">Фасад штукатурный</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/9c66ef3696cd43dd9a555609384a843f.svg"><a
+                href="/catalog/zabor-i-terrasa/">Забор и терраса</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/f76d2a09cbf54fc784d661112ec1df9b.svg"><a
+                href="/catalog/kommunikatsii/">Коммуникации</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/8b58286c4cea42cc8d56638a1bcc58ee.svg"><a
+                href="/catalog/instrument-i-raskhodniki/">Инструмент и расходники</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/590b5f795f8d4b70884c053301be460c.svg"><a
+                href="/catalog/elektrika/">Электрика</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/518a600c477a4910a2ce25155059a8b7.svg"><a
+                href="/catalog/nasosy/">Насосы</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/08a35e4420c34d619bd735b1b60a73df.svg"><a
+                href="/catalog/komplekty/">Комплекты</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/0f59ddda1b6947a887ad0c85a29ba380.svg"><a
+                href="/catalog/rasprodazha-i-nelikvid/">Уцененный товар</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/53665143f9b0466594f2938403178c53.svg"><a
+                href="/catalog/karkasnye-doma-i-bani/">Каркасные дома и бани</a></li>
+            <li class="bottom-menu_item"><img alt="" class="icon"
+                src="/media/categories/images/icons/6173bc4299e34dc08fe19fdd9c8ba354.svg"><a
+                href="/catalog/osveshenie/">Освещение</a></li>
+          </ul>
+        </li>
+        <li class="top-menu_item"><a href="/for-clients/">Для клиентов</a></li>
+        <li class="top-menu_item"><a href="/customers/delivery_calculator/">Доставка</a></li>
+        <li class="top-menu_item"><a href="/contacts/">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <div class="compare">
+      <div class="content__wrapper content__wrapper__mainpage">
+        <div class="row">
+          <div class="col-3 sidebar__wrapper">
+            <div class="rubrics__wrapper rubrics__wrapper__interactive"><a class="rubrics_headline" href="#">Каталог<svg
+                  fill="none" height="14" viewBox="0 0 17 13" width="17" xmlns="http://www.w3.org/2000/svg">
+                  <line stroke="white" transform="translate(0 1)" x2="17" y1="-0.5" y2="-0.5"></line>
+                  <line stroke="white" transform="translate(0 7)" x2="17" y1="-0.5" y2="-0.5"></line>
+                  <line stroke="white" transform="translate(0 13)" x2="17" y1="-0.5" y2="-0.5"></line>
+                </svg></a>
+              <ul class="" style="display: none;">
+                <li data-icon="/media/categories/images/icons/6149501dae3d479ab783b450a583aaa7.svg"
+                  data-white-icon="/media/categories/images/icons/e3b4c2c0421641a1af7f508c1c6f38b7.svg"><a
+                    href="/catalog/obshchestroitelnye/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/6149501dae3d479ab783b450a583aaa7.svg"></span>
+                    <span>Общестроительные</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/obshchestroitelnye/gazobetonnye-bloki/">Газобетонные блоки</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/keramzitovye-bloki/">Керамзитовые блоки</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/kirpich/">Кирпич</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/kerakam-kerakam/">Kerakam (керакам)</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/sypuchie-materialy/">Сыпучие материалы</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/metalloprokat/">Металлопрокат</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/setka-kladochnaia-provoloka/">Сетка кладочная,
+                        проволока</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/trotuarnaia-plitka/">Тротуарная плитка</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/armatura-kompozitnaia/">Арматура композитная</a>
+                    </li>
+                    <li><a href="/catalog/category/obshchestroitelnye/ruberoid/">Рубероид, мастики и праймер</a></li>
+                    <li><a href="/catalog/category/obshchestroitelnye/profilirovannye-membrany/">Профилированные
+                        мембраны</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/da1bb2ac32864a73a89d0ecff524b2de.svg"
+                  data-white-icon="/media/categories/images/icons/e34a8cb0b8c14727a517a2dd40577e42.svg"><a
+                    href="/catalog/pilomaterialy/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/da1bb2ac32864a73a89d0ecff524b2de.svg"></span>
+                    <span>Пиломатериалы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/pilomaterialy/brus-doska-obreznaia/">Брус, доска обрезная</a></li>
+                    <li><a href="/catalog/category/pilomaterialy/vagonka-blokkhaus-evropol/">Вагонка, блокхаус,
+                        европол</a></li>
+                    <li><a href="/catalog/category/pilomaterialy/brusochki-raznykh-sechenii/">Брусочки разных сечений</a>
+                    </li>
+                    <li><a href="/catalog/category/pilomaterialy/dlia-bani/">Для бани</a></li>
+                    <li><a href="/catalog/category/pilomaterialy/propitki-dlia-drevesiny/">Пропитки для древесины</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/3a98452a64aa4ad1b8ce99a80456c016.svg"
+                  data-white-icon="/media/categories/images/icons/68afd690b362410f831724d0b1d9e721.svg"><a
+                    href="/catalog/krovlia-metallicheskaia/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/3a98452a64aa4ad1b8ce99a80456c016.svg"></span> <span>Кровля
+                      металлическая</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/metallocherepitsa/">Металлочерепица</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/profnastil/">Профнастил</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/onduvilla/">Ондувилла</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/sofit-metallicheskii/">Софит металлический</a>
+                    </li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/podshivka-karniza-sofitami-m/">Софит
+                        виниловый</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/gladkii-list/">Гладкий лист</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/komplektuiushchie-dlia-krovli/">Комплектующие
+                        для кровли</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/elementy-bezopasnosti-krovli/">Трубчатые
+                        снегозадержатели</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/mansardnye-okna-fakro/">Мансардные окна
+                        fakro</a></li>
+                    <li><a href="/catalog/category/krovlia-metallicheskaia/cherdachnye-lestnitsy-fakro/">Чердачные
+                        лестницы fakro</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/c1e3d2732fa944be887bd7c2ec110714.svg"
+                  data-white-icon="/media/categories/images/icons/a4f7b43622394bb083e531c7c9bb522e.svg"><a
+                    href="/catalog/vodostochnye-sistemy/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/c1e3d2732fa944be887bd7c2ec110714.svg"></span>
+                    <span>Водосточные системы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-grand-sistem/">Водосточная
+                        система Grand System</a></li>
+                    <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaya-sistema-docke-standart/">Водосточная
+                        система Docke STANDART 120/80мм пластик</a></li>
+                    <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-dioke-120-85mm/">Водосточная
+                        система Docke PREMIUM 120/85мм пластик</a></li>
+                    <li><a
+                        href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-deke-liuks-140-100mm/">Водосточная
+                        система Docke LUX 140/100мм пластик</a></li>
+                    <li><a
+                        href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-grand-lain-125-90mm/">Водосточная
+                        система Grand Line 125/90мм</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/00d5c1f652ea464e9de5a8e946e451d4.svg"
+                  data-white-icon="/media/categories/images/icons/1353c106baa6417bb2f2ffb8e1d902d0.svg"><a
+                    href="/catalog/mjagkaya-krovlia/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/00d5c1f652ea464e9de5a8e946e451d4.svg"></span> <span>Мягкая
+                      кровля</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/shinglac/">Шинглаc</a></li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/deke/">Деке</a></li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/katepal/">Катепал</a></li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/rufshild/">Руфшилд</a></li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/soputstvuiushchie-tovary/">Сопутствующие товары</a>
+                    </li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/podshivka-karniza-sofitami/">Подшивка карниза
+                        софитами</a></li>
+                    <li><a href="/catalog/category/mjagkaya-krovlia/naplavlyaemaya-krovlya/">Рулонная наплавляемая
+                        кровля</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/08f0bff7a0df4db5b7797bd001a5d59b.svg"
+                  data-white-icon="/media/categories/images/icons/a52e2177117240fcb04187762e553de4.svg"><a
+                    href="/catalog/teploizoliatsiia/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/08f0bff7a0df4db5b7797bd001a5d59b.svg"></span>
+                    <span>Теплоизоляция</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-knauf-insulation/">Утеплители Knauf
+                        insulation</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-isover/">Утеплители Isover</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-ekover/">Утеплители Эковер</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-tekhnonikol/">Утеплители Технониколь</a>
+                    </li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-rockwool/">Утеплители Rockwool</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/penopolistiroly/">Пенополистиролы</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/uteplenie-sten-srubov-i-ban/">Утепление стен срубов и
+                        бань</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/podkrovelnye-plenki/">Подкровельные пленки</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-baswool/">Утеплители BASWOOL</a></li>
+                    <li><a href="/catalog/category/teploizoliatsiia/utepliteli-vatta-rus/">Утеплители Vatta Rus</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/39fb5e456d3c48bd9d708182b1ae9e9f.svg"
+                  data-white-icon="/media/categories/images/icons/4b9e35e0a514461c8cc90d9f0f869771.svg"><a
+                    href="/catalog/fanera-osb-dsp-dvp-tssp/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/39fb5e456d3c48bd9d708182b1ae9e9f.svg"></span> <span>Фанера,
+                      осб, дсп, двп, цсп</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/plity-osb-osp/">Плиты oсб-осп</a></li>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/fanera/">Фанера</a></li>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/dvp-dsp-tssp/">Двп, дсп, цсп</a></li>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/ldsp/">ЛДСП</a></li>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/laminirovanaia-fanera/">Ламинированная
+                        фанера</a></li>
+                    <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/grunt-i-kraska-dlya-osb-plit-i-fanery/">Грунт и
+                        краска для ОСБ-плит и фанеры</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/d8b57bdc86694ccf85e29a8ce279331d.svg"
+                  data-white-icon="/media/categories/images/icons/cd8be71e2af7492589d8e6950b98c43b.svg"><a
+                    href="/catalog/otdelka-chernovaya-cement/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/d8b57bdc86694ccf85e29a8ce279331d.svg"></span> <span>Отделка
+                      черновая</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/gipsokarton/">Гипсокартон Волма, Гипрок,
+                        Магма</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/profilya-dlya-gipsokartona/">Профили для
+                        гипсокартона</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/sml-steklo-magnezitovyi-list/">Смл-
+                        стекло-магнезитовый лист</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/gruntovki/">Грунтовка акриловая</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/sukhie-smesi-gruntovki/">Штукатурка гипсовая,
+                        клей, цемент</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/plenki-tekhnicheskie/">Пленки технические</a>
+                    </li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/steklokholst-i-setki/">Стеклохолст и
+                        сетки</a></li>
+                    <li><a
+                        href="/catalog/category/otdelka-chernovaya-cement/pazogrebnevaia-plita-pgp-gipsovaia/">Пазогребневая
+                        плита (пгп) гипсовая</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/teplyj-pol-b/">Теплый пол</a></li>
+                    <li><a href="/catalog/category/otdelka-chernovaya-cement/lyuki-pod-plitku/">Люки под плитку</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/7b3af40dfb544004b7073c2509d5889a.svg"
+                  data-white-icon="/media/categories/images/icons/639910ae5281475195661981fe02d474.svg"><a
+                    href="/catalog/otdelka-finishnaia/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/7b3af40dfb544004b7073c2509d5889a.svg"></span> <span>Отделка
+                      финишная</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/otdelka-finishnaia/fasadnaia-plitka-tekhnonikol-hauberk/">Фасадная
+                        плитка технониколь hauberk</a></li>
+                    <li><a href="/catalog/category/otdelka-finishnaia/podvesnoi-potolok-komplektuiushchie/">Подвесной
+                        потолок, комплектующие</a></li>
+                    <li><a href="/catalog/category/otdelka-finishnaia/zharostoikaia-plitka-terrakot/">Жаростойкая плитка
+                        "Терракот"</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/60d3cd7821ea4026bdde0e2d5312340f.svg"
+                  data-white-icon="/media/categories/images/icons/fc219cf05b35440a8edf3e92b0cb77b9.svg"><a
+                    href="/catalog/kraski-peny-germetiki/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/60d3cd7821ea4026bdde0e2d5312340f.svg"></span> <span>Краски,
+                      пены, герметики</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/grunt-emal-lak/">Грунт, эмаль, лак</a></li>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/kraska/">Краска и колеры</a></li>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/pena-montazhnaia-germetiki-kleia/">Пена
+                        монтажная, герметики, клея</a></li>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/dobavki/">Добавки</a></li>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/kraska-dlia-metallocherepitsy/">Краска для
+                        металлочерепицы</a></li>
+                    <li><a href="/catalog/category/kraski-peny-germetiki/maliarnye-prinadlezhnosti/">Малярные
+                        принадлежности</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/e1b4d9d964bd49fdb1ce9abf04fcbb26.svg"
+                  data-white-icon="/media/categories/images/icons/faeabf536f654632882d862689db3218.svg"><a
+                    href="/catalog/saiding/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/e1b4d9d964bd49fdb1ce9abf04fcbb26.svg"></span>
+                    <span>Сайдинг</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/saiding/saiding-grand-line-grand-lain/">Сайдинг grand line (гранд
+                        лайн)</a></li>
+                    <li><a href="/catalog/category/saiding/saiding-docke-dioke/">Сайдинг docke (дёке)</a></li>
+                    <li><a href="/catalog/category/saiding/saiding-tecos-tekos/">Сайдинг tecos (текос)</a></li>
+                    <li><a href="/catalog/category/saiding/saiding-vox-voks/">Сайдинг vox (вокс)</a></li>
+                    <li><a href="/catalog/category/saiding/tsokolnyi-saiding-docke-r-dioke/">Цокольный сайдинг docke-r
+                        (дёке)</a></li>
+                    <li><a href="/catalog/category/saiding/tsokolnyi-saiding-vox-voks/">Цокольный сайдинг vox (вокс)</a>
+                    </li>
+                    <li><a href="/catalog/category/saiding/fasadnaia-panel-grand-line-grand-lain/">Фасадная панель grand
+                        line (гранд лайн)</a></li>
+                    <li><a href="/catalog/category/saiding/tsokolnyi-saiding-dolomit/">Цокольный сайдинг доломит</a></li>
+                    <li><a href="/catalog/category/saiding/podshivka-karniza-sofitami-s/">Подшивка карниза софитами</a>
+                    </li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/146969c26195466785251ed4fe64693c.svg"
+                  data-white-icon="/media/categories/images/icons/b1b7f0ef6e6f43a9ba971283ea27d733.svg"><a
+                    href="/catalog/fasad-shtukaturnyi/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/146969c26195466785251ed4fe64693c.svg"></span> <span>Фасад
+                      штукатурный</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-weber/">Фасад weber</a></li>
+                    <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-ceresit/">Фасад ceresit</a></li>
+                    <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-bystroi/">Фасад быстрой</a></li>
+                    <li><a href="/catalog/category/fasad-shtukaturnyi/fasadnye-utepliteli/">Фасадные утеплители</a></li>
+                    <li><a
+                        href="/catalog/category/fasad-shtukaturnyi/fasadnaia-kraska-i-komplektuiushchie-dlia-fasada/">Фасадная
+                        краска и комплектующие для фасада</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/0d91486909c847228e9c114f7a0c9b7a.svg"
+                  data-white-icon="/media/categories/images/icons/9c66ef3696cd43dd9a555609384a843f.svg"><a
+                    href="/catalog/zabor-i-terrasa/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/0d91486909c847228e9c114f7a0c9b7a.svg"></span> <span>Забор и
+                      терраса</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/zabor-i-terrasa/proflist-dlia-zabora/">Профлист для забора</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/metallicheskii-shtaket/">Металлический штакет</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/setka-rabica/">Сетка-рабица</a></li>
+                    <li><a
+                        href="/catalog/category/zabor-i-terrasa/terrasnaia-doska-iz-drevesno-polimernogo-kompozita/">Террасная
+                        доска из древесно-полимерного композита</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/komplektuiushchie-dlia-zabora/">Комплектующие для
+                        забора</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/zamochno-skobianye-izdeliia/">Замочно-скобяные
+                        изделия</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/panelnye-ograzhdeniia-grand-line/">Панельные ограждения
+                        grand line</a></li>
+                    <li><a href="/catalog/category/zabor-i-terrasa/modulnye-ograzhdeniia-grand-line/">Модульные ограждения
+                        grand line</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/c83dcbb45e8b49bbb5d3b2ee13ad2cb7.svg"
+                  data-white-icon="/media/categories/images/icons/f76d2a09cbf54fc784d661112ec1df9b.svg"><a
+                    href="/catalog/kommunikatsii/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/c83dcbb45e8b49bbb5d3b2ee13ad2cb7.svg"></span>
+                    <span>Коммуникации</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/kommunikatsii/kolodca-i-lyuki/">Люки</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/elementy-kolodcev/">Элементы колодцев</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/tioplyi-pol/">Тёплый пол</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/kanalizatsionnye-truby/">Канализационные трубы и
+                        комплектующие</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/polipropilenovye-truby/">Полипропиленовые трубы и
+                        комплектующие</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/pnd-truby-kompressionnye-fitingi/">Пнд трубы и
+                        компрессионные фитинги</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/radiatory/">Радиаторы</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/avtonomnaya-kanalizaciya-kolo-vesi/">Автономная
+                        канализация Kolo Vesi</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/pogreba-kellari/">Погреба Kellari</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/kessony-korsu/">Кессоны Korsu</a></li>
+                    <li><a href="/catalog/category/kommunikatsii/lyuki-revizionnye/">Люки ревизионные</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/e123cd8a62734b6a8f6782cd1325cc95.svg"
+                  data-white-icon="/media/categories/images/icons/8b58286c4cea42cc8d56638a1bcc58ee.svg"><a
+                    href="/catalog/instrument-i-raskhodniki/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/e123cd8a62734b6a8f6782cd1325cc95.svg"></span> <span>Инструмент
+                      и расходники</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/instrument-ruchnoi/">Инструмент ручной</a>
+                    </li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/raskhod-materialy/">Расходные материалы</a>
+                    </li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/elektroinstrument/">Электроинструмент</a></li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/metizy/">Метизы</a></li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/instrument-ruchnoi-po-gazobetonu/">Инструмент
+                        ручной по газобетону</a></li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/krepezhnye-ugolki-i-plastiny/">Крепежные
+                        уголки и пластины</a></li>
+                    <li><a href="/catalog/category/instrument-i-raskhodniki/opora-brusa-derzhatel-balki/">Опора бруса,
+                        держатель балки</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/44f65a878dd34d5e972d483a326d6af0.svg"
+                  data-white-icon="/media/categories/images/icons/590b5f795f8d4b70884c053301be460c.svg"><a
+                    href="/catalog/elektrika/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/44f65a878dd34d5e972d483a326d6af0.svg"></span>
+                    <span>Электрика</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/elektrika/kabel/">Кабель</a></li>
+                    <li><a href="/catalog/category/elektrika/avtomaty/">Автоматы</a></li>
+                    <li><a href="/catalog/category/elektrika/klemmy/">Клеммы</a></li>
+                    <li><a href="/catalog/category/elektrika/korobki/">Коробки</a></li>
+                    <li><a href="/catalog/category/elektrika/rozetki-vykliuchateli/">Розетки, выключатели</a></li>
+                    <li><a href="/catalog/category/elektrika/lampy-patron-stiazhka/">Лампы и патрон</a></li>
+                    <li><a href="/catalog/category/elektrika/teplyj-pol-a/">Теплый пол</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/22832da7a1614559a76efd19c6fe9986.svg"
+                  data-white-icon="/media/categories/images/icons/518a600c477a4910a2ce25155059a8b7.svg"><a
+                    href="/catalog/nasosy/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/22832da7a1614559a76efd19c6fe9986.svg"></span>
+                    <span>Насосы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/nasosy/poverkhnostnye/">Поверхностные</a></li>
+                    <li><a href="/catalog/category/nasosy/drenazhnye/">Дренажные</a></li>
+                  </ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/e56b977ffc774ba086ee1a60c653a62e.svg"
+                  data-white-icon="/media/categories/images/icons/08a35e4420c34d619bd735b1b60a73df.svg"><a
+                    href="/catalog/komplekty/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/e56b977ffc774ba086ee1a60c653a62e.svg"></span>
+                    <span>Комплекты</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul></ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/03abdf4342bd4d5782a0c9b06c228520.svg"
+                  data-white-icon="/media/categories/images/icons/0f59ddda1b6947a887ad0c85a29ba380.svg"><a
+                    href="/catalog/rasprodazha-i-nelikvid/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/03abdf4342bd4d5782a0c9b06c228520.svg"></span> <span>Уцененный
+                      товар</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul></ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/56ca69b78a9e4e90b4996065938d260b.svg"
+                  data-white-icon="/media/categories/images/icons/53665143f9b0466594f2938403178c53.svg"><a
+                    href="/catalog/karkasnye-doma-i-bani/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/56ca69b78a9e4e90b4996065938d260b.svg"></span> <span>Каркасные
+                      дома и бани</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul></ul>
+                </li>
+                <li data-icon="/media/categories/images/icons/5307a0bbf3fd42a496b1a541837a5ece.svg"
+                  data-white-icon="/media/categories/images/icons/6173bc4299e34dc08fe19fdd9c8ba354.svg"><a
+                    href="/catalog/osveshenie/"><span><img alt="" class="icon"
+                        src="/media/categories/images/icons/5307a0bbf3fd42a496b1a541837a5ece.svg"></span>
+                    <span>Освещение</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                        </path>
+                      </svg></span></a>
+                  <ul>
+                    <li><a href="/catalog/category/osveshenie/svetodiodnye-lenty/">Светодиодные ленты</a></li>
+                    <li><a href="/catalog/category/osveshenie/linejnye-svetilniki/">Подвесные и накладные линейные
+                        светильники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-9 with_sidebar__content main_page__with_tabs">
+            <div class="search__wrapper" data-url="/catalog/search/">
+              <form action="/catalog/catalog_search/" method="get" name="search" novalidate=""><button
+                  class="button_mobile_search" style="display: none" type="button"><svg fill="none" height="19"
+                    viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="7.5" stroke="black"></circle>
+                    <rect fill="black" height="6" transform="rotate(-45 12.6541 13.9772)" width="1" x="12.6541"
+                      y="13.9772"></rect>
+                  </svg></button><input autocomplete="off" class="search_input" data-url="/catalog/search/" name="query"
+                  placeholder="Что ищем?" type="text" placeholder-default="" placeholder-active=""></form>
+              <div class="search__actions" style=""><a class="search__example" href="#">Например:
+                  <span>утепление</span></a> <a class="btn btn-primary search__button" href="#">Найти</a></div>
+              <div class="search_panel__results__wrapper search_results_is_shown" id="success-result-search"></div>
+            </div>
+
+            <div class="rubrics__mobile__wrapper">
+              <div class="row">
+                <div class="col-12"><a class="rubrics__mobile__toggler" href="#"><span>Каталог</span></a></div>
+                <div class="col-12 rubrics__mobile__container">
+                  <div class="rubrics__mobile__container__wrapper noclone">
+                    <ul>
+                      <li data-icon="/media/categories/images/icons/6149501dae3d479ab783b450a583aaa7.svg"
+                        data-white-icon="/media/categories/images/icons/e3b4c2c0421641a1af7f508c1c6f38b7.svg"><a
+                          href="/catalog/obshchestroitelnye/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/6149501dae3d479ab783b450a583aaa7.svg"></span>
+                          <span>Общестроительные</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/obshchestroitelnye/gazobetonnye-bloki/"><img alt=""
+                                src="/media/categories/images/759dd570e8864d1fa6b866b70b6333cf.55x55.png">Газобетонные
+                              блоки</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/keramzitovye-bloki/"><img alt=""
+                                src="/media/categories/images/b849ac82021c451d80ac0703edfe6dd4.55x55.png">Керамзитовые
+                              блоки</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/kirpich/"><img alt=""
+                                src="/media/categories/images/59575a23d8ba41a683e6652a19c524ed.55x55.png">Кирпич</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/kerakam-kerakam/"><img alt=""
+                                src="/media/categories/images/bb79c8a48a444aca94394f69a7edad4f.55x55.png">Kerakam
+                              (керакам)</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/sypuchie-materialy/"><img alt=""
+                                src="/media/categories/images/4d40dd8fe3a34143957aa1c647b8f055.55x55.png">Сыпучие
+                              материалы</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/metalloprokat/"><img alt=""
+                                src="/media/categories/images/01a69a02d2ed4a7bbfeba66a975f6807.55x55.png">Металлопрокат</a>
+                          </li>
+                          <li><a href="/catalog/category/obshchestroitelnye/setka-kladochnaia-provoloka/"><img alt=""
+                                src="/media/categories/images/563a65acd9e145db9e4590cdb8bedfee.55x55.png">Сетка кладочная,
+                              проволока</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/trotuarnaia-plitka/"><img alt=""
+                                src="/media/categories/images/4621a5bdd53045139eb9fe1e34751000.55x55.png">Тротуарная
+                              плитка</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/armatura-kompozitnaia/"><img alt=""
+                                src="/media/categories/images/8597461ce4aa44fab9b0b2e3eb1e45a1.55x55.png">Арматура
+                              композитная</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/ruberoid/"><img alt=""
+                                src="/media/categories/images/d5828257fb15452c83576242f7a7e20b.55x55.png">Рубероид,
+                              мастики и праймер</a></li>
+                          <li><a href="/catalog/category/obshchestroitelnye/profilirovannye-membrany/"><img alt=""
+                                src="/media/categories/images/e742f3785ff748f4ad63f93a680b8a9c.55x55.png">Профилированные
+                              мембраны</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/da1bb2ac32864a73a89d0ecff524b2de.svg"
+                        data-white-icon="/media/categories/images/icons/e34a8cb0b8c14727a517a2dd40577e42.svg"><a
+                          href="/catalog/pilomaterialy/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/da1bb2ac32864a73a89d0ecff524b2de.svg"></span>
+                          <span>Пиломатериалы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/pilomaterialy/brus-doska-obreznaia/"><img alt=""
+                                src="/media/categories/images/6df337e007d148b48fe1031d4398c85f.55x55.png">Брус, доска
+                              обрезная</a></li>
+                          <li><a href="/catalog/category/pilomaterialy/vagonka-blokkhaus-evropol/"><img alt=""
+                                src="/media/categories/images/9dfde9320b3f431d8d5ee5c8f4ba7270.55x55.png">Вагонка,
+                              блокхаус, европол</a></li>
+                          <li><a href="/catalog/category/pilomaterialy/brusochki-raznykh-sechenii/"><img alt=""
+                                src="/media/categories/images/199add8534f54c91b3833f038760229c.55x55.png">Брусочки разных
+                              сечений</a></li>
+                          <li><a href="/catalog/category/pilomaterialy/dlia-bani/"><img alt=""
+                                src="/media/categories/images/db9db4eaf9df4c1ea5bfef0fff750eca.55x55.png">Для бани</a>
+                          </li>
+                          <li><a href="/catalog/category/pilomaterialy/propitki-dlia-drevesiny/"><img alt=""
+                                src="/media/categories/images/e5eed7bc854746cf880a37a0e0b26625.55x55.png">Пропитки для
+                              древесины</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/3a98452a64aa4ad1b8ce99a80456c016.svg"
+                        data-white-icon="/media/categories/images/icons/68afd690b362410f831724d0b1d9e721.svg"><a
+                          href="/catalog/krovlia-metallicheskaia/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/3a98452a64aa4ad1b8ce99a80456c016.svg"></span>
+                          <span>Кровля металлическая</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/metallocherepitsa/"><img alt=""
+                                src="/media/categories/images/8e448548a9f74918973f4bb5e2556f26.55x55.png">Металлочерепица</a>
+                          </li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/profnastil/"><img alt=""
+                                src="/media/categories/images/590e02796c8748c8b33df79e2a07b328.55x55.png">Профнастил</a>
+                          </li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/onduvilla/"><img alt=""
+                                src="/media/categories/images/f185703134a8483f8fea7c0a30a1dadd.55x55.png">Ондувилла</a>
+                          </li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/sofit-metallicheskii/"><img alt=""
+                                src="/media/categories/images/450e3aa65dce4e86b8c85504445518af.55x55.png">Софит
+                              металлический</a></li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/podshivka-karniza-sofitami-m/"><img
+                                alt="" src="/media/categories/images/34825490bab049f7949444acbca1f10f.55x55.png">Софит
+                              виниловый</a></li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/gladkii-list/"><img alt=""
+                                src="/media/categories/images/3a729e04d92d461c8492f18b91befeaf.55x55.png">Гладкий лист</a>
+                          </li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/komplektuiushchie-dlia-krovli/"><img
+                                alt=""
+                                src="/media/categories/images/96848e3c7ebe4b70a19c3a92f1934af0.55x55.png">Комплектующие
+                              для кровли</a></li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/elementy-bezopasnosti-krovli/"><img
+                                alt="" src="/media/categories/images/a4f1919d9ab84d9287af70c0fed81044.55x55.png">Трубчатые
+                              снегозадержатели</a></li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/mansardnye-okna-fakro/"><img alt=""
+                                src="/media/categories/images/3934a7076aad489785d498e47a30e34c.55x55.png">Мансардные окна
+                              fakro</a></li>
+                          <li><a href="/catalog/category/krovlia-metallicheskaia/cherdachnye-lestnitsy-fakro/"><img alt=""
+                                src="/media/categories/images/8dc23adac6984179b156aff00d6a5e5f.55x55.png">Чердачные
+                              лестницы fakro</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/c1e3d2732fa944be887bd7c2ec110714.svg"
+                        data-white-icon="/media/categories/images/icons/a4f7b43622394bb083e531c7c9bb522e.svg"><a
+                          href="/catalog/vodostochnye-sistemy/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/c1e3d2732fa944be887bd7c2ec110714.svg"></span>
+                          <span>Водосточные системы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-grand-sistem/"><img
+                                alt=""
+                                src="/media/categories/images/1a35d84cc3c0492eb51cd1c1e4f07f7e.55x55.png">Водосточная
+                              система Grand System</a></li>
+                          <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaya-sistema-docke-standart/"><img
+                                alt=""
+                                src="/media/categories/images/f079de5afe9d4d6ea0a592b7ff45efd3.55x55.jpg">Водосточная
+                              система Docke STANDART 120/80мм пластик</a></li>
+                          <li><a href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-dioke-120-85mm/"><img
+                                alt=""
+                                src="/media/categories/images/eecd822135b44ec68dc348d9c22bee1b.55x55.png">Водосточная
+                              система Docke PREMIUM 120/85мм пластик</a></li>
+                          <li><a
+                              href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-deke-liuks-140-100mm/"><img
+                                alt=""
+                                src="/media/categories/images/982758ee7756467ca397cb79c6c773a4.55x55.png">Водосточная
+                              система Docke LUX 140/100мм пластик</a></li>
+                          <li><a
+                              href="/catalog/category/vodostochnye-sistemy/vodostochnaia-sistema-grand-lain-125-90mm/"><img
+                                alt=""
+                                src="/media/categories/images/e4979d3cfa674ac79e1217a8dfde8604.55x55.png">Водосточная
+                              система Grand Line 125/90мм</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/00d5c1f652ea464e9de5a8e946e451d4.svg"
+                        data-white-icon="/media/categories/images/icons/1353c106baa6417bb2f2ffb8e1d902d0.svg"><a
+                          href="/catalog/mjagkaya-krovlia/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/00d5c1f652ea464e9de5a8e946e451d4.svg"></span>
+                          <span>Мягкая кровля</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/shinglac/"><img alt=""
+                                src="/media/categories/images/60ae3a710fdd41678a0bc38adc09071b.55x55.png">Шинглаc</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/deke/"><img alt=""
+                                src="/media/categories/images/be53ace1e4b74ae197d39c37ba06bff6.55x55.png">Деке</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/katepal/"><img alt=""
+                                src="/media/categories/images/254005633f624784ab615e4ab681f832.55x55.png">Катепал</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/rufshild/"><img alt=""
+                                src="/media/categories/images/5a67eae92ed04c54bfc4ac10c4e52967.55x55.png">Руфшилд</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/soputstvuiushchie-tovary/"><img alt=""
+                                src="/media/categories/images/db8b488f46d1459fa95ebc4f016b188e.55x55.png">Сопутствующие
+                              товары</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/podshivka-karniza-sofitami/"><img alt=""
+                                src="/media/categories/images/990b39d8c06342f2ba97502106a2da34.55x55.png">Подшивка карниза
+                              софитами</a></li>
+                          <li><a href="/catalog/category/mjagkaya-krovlia/naplavlyaemaya-krovlya/"><img alt=""
+                                src="/media/categories/images/902b156dc56a45b6a927b5f959645c35.55x55.jpg">Рулонная
+                              наплавляемая кровля</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/08f0bff7a0df4db5b7797bd001a5d59b.svg"
+                        data-white-icon="/media/categories/images/icons/a52e2177117240fcb04187762e553de4.svg"><a
+                          href="/catalog/teploizoliatsiia/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/08f0bff7a0df4db5b7797bd001a5d59b.svg"></span>
+                          <span>Теплоизоляция</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-knauf-insulation/"><img alt=""
+                                src="/media/categories/images/c246c5012ea84e839be311377d37cd1c.55x55.png">Утеплители Knauf
+                              insulation</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-isover/"><img alt=""
+                                src="/media/categories/images/f6a32d40947041a6ad74c8eb3b62b62b.55x55.png">Утеплители
+                              Isover</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-ekover/"><img alt=""
+                                src="/media/categories/images/8fdd9eb13d6b4260969aea772aacc632.55x55.jpg">Утеплители
+                              Эковер</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-tekhnonikol/"><img alt=""
+                                src="/media/categories/images/42ea72a87aae428aa9466b5f15c15263.55x55.png">Утеплители
+                              Технониколь</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-rockwool/"><img alt=""
+                                src="/media/categories/images/fc959b897dbe43e1a1cb717e445bf11e.55x55.png">Утеплители
+                              Rockwool</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/penopolistiroly/"><img alt=""
+                                src="/media/categories/images/4054bf1a7c624aed99fb8d9460eb9276.55x55.png">Пенополистиролы</a>
+                          </li>
+                          <li><a href="/catalog/category/teploizoliatsiia/uteplenie-sten-srubov-i-ban/"><img alt=""
+                                src="/media/categories/images/9ad193bd85df4be8baf5c05b9d46d025.55x55.png">Утепление стен
+                              срубов и бань</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/podkrovelnye-plenki/"><img alt=""
+                                src="/media/categories/images/e8a103f2bb3d4f07aa1b494024b03f6a.55x55.png">Подкровельные
+                              пленки</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-baswool/"><img alt=""
+                                src="/media/categories/images/c57a0bda0f36470ab6116e94091fa8f5.55x55.jpg">Утеплители
+                              BASWOOL</a></li>
+                          <li><a href="/catalog/category/teploizoliatsiia/utepliteli-vatta-rus/"><img alt=""
+                                src="/media/categories/images/29ff0d0b3fbf4593aa54929adb95c403.55x55.jpg">Утеплители Vatta
+                              Rus</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/39fb5e456d3c48bd9d708182b1ae9e9f.svg"
+                        data-white-icon="/media/categories/images/icons/4b9e35e0a514461c8cc90d9f0f869771.svg"><a
+                          href="/catalog/fanera-osb-dsp-dvp-tssp/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/39fb5e456d3c48bd9d708182b1ae9e9f.svg"></span>
+                          <span>Фанера, осб, дсп, двп, цсп</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/plity-osb-osp/"><img alt=""
+                                src="/media/categories/images/127c5ebca461476fa6bc4391521c3e63.55x55.png">Плиты
+                              oсб-осп</a></li>
+                          <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/fanera/"><img alt=""
+                                src="/media/categories/images/5e5e896f688d4b38b8e33d6b0ed32211.55x55.png">Фанера</a></li>
+                          <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/dvp-dsp-tssp/"><img alt=""
+                                src="/media/categories/images/59caca5af66646359b5aaa81628ecb02.55x55.png">Двп, дсп,
+                              цсп</a></li>
+                          <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/ldsp/"><img alt=""
+                                src="/media/categories/images/fceff148286443bdb641c15ebecfc236.55x55.jpg">ЛДСП</a></li>
+                          <li><a href="/catalog/category/fanera-osb-dsp-dvp-tssp/laminirovanaia-fanera/"><img alt=""
+                                src="/media/categories/images/075c9844c60e42a0984e378f31e0aca9.55x55.png">Ламинированная
+                              фанера</a></li>
+                          <li><a
+                              href="/catalog/category/fanera-osb-dsp-dvp-tssp/grunt-i-kraska-dlya-osb-plit-i-fanery/"><img
+                                alt="" src="/media/categories/images/1dfa761cdf2f49f186bb7e4c64108ee2.55x55.png">Грунт и
+                              краска для ОСБ-плит и фанеры</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/d8b57bdc86694ccf85e29a8ce279331d.svg"
+                        data-white-icon="/media/categories/images/icons/cd8be71e2af7492589d8e6950b98c43b.svg"><a
+                          href="/catalog/otdelka-chernovaya-cement/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/d8b57bdc86694ccf85e29a8ce279331d.svg"></span>
+                          <span>Отделка черновая</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/gipsokarton/"><img alt=""
+                                src="/media/categories/images/745dcf185c5e4f86aeeea60410480f81.55x55.png">Гипсокартон
+                              Волма, Гипрок, Магма</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/profilya-dlya-gipsokartona/"><img
+                                alt="" src="/media/categories/images/f350527ebd0b4802ab11f863f8d36b82.55x55.png">Профили
+                              для гипсокартона</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/sml-steklo-magnezitovyi-list/"><img
+                                alt="" src="/media/categories/images/f41aeef374fa48b2890cee3876b0a37f.55x55.png">Смл-
+                              стекло-магнезитовый лист</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/gruntovki/"><img alt=""
+                                src="/media/categories/images/0a2d5b99d7ec445bbfaa17367657efd2.55x55.png">Грунтовка
+                              акриловая</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/sukhie-smesi-gruntovki/"><img alt=""
+                                src="/media/categories/images/224b44622dc948e0b84bd73d7d73b3fc.55x55.png">Штукатурка
+                              гипсовая, клей, цемент</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/plenki-tekhnicheskie/"><img alt=""
+                                src="/media/categories/images/036fff87e766476b9e8f557201848cb3.55x55.png">Пленки
+                              технические</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/steklokholst-i-setki/"><img alt=""
+                                src="/media/categories/images/c87df86b65c344279896e80ef7600824.55x55.png">Стеклохолст и
+                              сетки</a></li>
+                          <li><a
+                              href="/catalog/category/otdelka-chernovaya-cement/pazogrebnevaia-plita-pgp-gipsovaia/"><img
+                                alt=""
+                                src="/media/categories/images/d5722d775cdf44448dfc61fe9f5b2c2b.55x55.png">Пазогребневая
+                              плита (пгп) гипсовая</a></li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/teplyj-pol-b/"><img alt=""
+                                src="/media/categories/images/4d03aa5cb0a946cea18800dffed1ccad.55x55.webp">Теплый пол</a>
+                          </li>
+                          <li><a href="/catalog/category/otdelka-chernovaya-cement/lyuki-pod-plitku/"><img alt=""
+                                src="/media/categories/images/406f6fa31ca444908656d99dbc45f3a1.55x55.webp">Люки под
+                              плитку</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/7b3af40dfb544004b7073c2509d5889a.svg"
+                        data-white-icon="/media/categories/images/icons/639910ae5281475195661981fe02d474.svg"><a
+                          href="/catalog/otdelka-finishnaia/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/7b3af40dfb544004b7073c2509d5889a.svg"></span>
+                          <span>Отделка финишная</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/otdelka-finishnaia/fasadnaia-plitka-tekhnonikol-hauberk/"><img
+                                alt="" src="/media/categories/images/bb753bca0e3b4d0e954a2fae2585ec5a.55x55.png">Фасадная
+                              плитка технониколь hauberk</a></li>
+                          <li><a href="/catalog/category/otdelka-finishnaia/podvesnoi-potolok-komplektuiushchie/"><img
+                                alt="" src="/media/categories/images/a775f1c669744d3aaa61797cd84d5103.55x55.png">Подвесной
+                              потолок, комплектующие</a></li>
+                          <li><a href="/catalog/category/otdelka-finishnaia/zharostoikaia-plitka-terrakot/"><img alt=""
+                                src="/media/categories/images/727c9c8ff4db42a0bd8c111cedae4606.55x55.png">Жаростойкая
+                              плитка "Терракот"</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/60d3cd7821ea4026bdde0e2d5312340f.svg"
+                        data-white-icon="/media/categories/images/icons/fc219cf05b35440a8edf3e92b0cb77b9.svg"><a
+                          href="/catalog/kraski-peny-germetiki/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/60d3cd7821ea4026bdde0e2d5312340f.svg"></span>
+                          <span>Краски, пены, герметики</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/grunt-emal-lak/"><img alt=""
+                                src="/media/categories/images/cf4a50cddc2c4f07b128229b653ead59.55x55.png">Грунт, эмаль,
+                              лак</a></li>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/kraska/"><img alt=""
+                                src="/media/categories/images/6154077932b1433184119cc9e978d2d4.55x55.jpg">Краска и
+                              колеры</a></li>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/pena-montazhnaia-germetiki-kleia/"><img
+                                alt="" src="/media/categories/images/5f7aa96b3aa5401da3f92e2cae231652.55x55.jpg">Пена
+                              монтажная, герметики, клея</a></li>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/dobavki/"><img alt=""
+                                src="/media/categories/images/b262bc1c92ee40c887c029d8a7770f54.55x55.jpg">Добавки</a></li>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/kraska-dlia-metallocherepitsy/"><img alt=""
+                                src="/media/categories/images/419ce93e17cb45608269cef33eb86e6e.55x55.jpg">Краска для
+                              металлочерепицы</a></li>
+                          <li><a href="/catalog/category/kraski-peny-germetiki/maliarnye-prinadlezhnosti/"><img alt=""
+                                src="/media/categories/images/619223811ae74b1cb3bc3f30720a7034.55x55.png">Малярные
+                              принадлежности</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/e1b4d9d964bd49fdb1ce9abf04fcbb26.svg"
+                        data-white-icon="/media/categories/images/icons/faeabf536f654632882d862689db3218.svg"><a
+                          href="/catalog/saiding/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/e1b4d9d964bd49fdb1ce9abf04fcbb26.svg"></span>
+                          <span>Сайдинг</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/saiding/saiding-grand-line-grand-lain/"><img alt=""
+                                src="/media/categories/images/1392b0fc205a4ede9485ed5f519784b1.55x55.png">Сайдинг grand
+                              line (гранд лайн)</a></li>
+                          <li><a href="/catalog/category/saiding/saiding-docke-dioke/"><img alt=""
+                                src="/media/categories/images/595d8efcf3e043b39a52746b7d43472a.55x55.png">Сайдинг docke
+                              (дёке)</a></li>
+                          <li><a href="/catalog/category/saiding/saiding-tecos-tekos/"><img alt=""
+                                src="/media/categories/images/2d56c697d0714cafb3c0dc0a40c3d702.55x55.png">Сайдинг tecos
+                              (текос)</a></li>
+                          <li><a href="/catalog/category/saiding/saiding-vox-voks/"><img alt=""
+                                src="/media/categories/images/e2971ddd5bbe488caa6c219ee04fef03.55x55.png">Сайдинг vox
+                              (вокс)</a></li>
+                          <li><a href="/catalog/category/saiding/tsokolnyi-saiding-docke-r-dioke/"><img alt=""
+                                src="/media/categories/images/6eff1e9d73734301b33d291118db0129.55x55.png">Цокольный
+                              сайдинг docke-r (дёке)</a></li>
+                          <li><a href="/catalog/category/saiding/tsokolnyi-saiding-vox-voks/"><img alt=""
+                                src="/media/categories/images/2520731d8a2f4cd9ae8c1e81d308260a.55x55.png">Цокольный
+                              сайдинг vox (вокс)</a></li>
+                          <li><a href="/catalog/category/saiding/fasadnaia-panel-grand-line-grand-lain/"><img alt=""
+                                src="/media/categories/images/3a2708c5c93a42e89cbf04f021c3d5d0.55x55.png">Фасадная панель
+                              grand line (гранд лайн)</a></li>
+                          <li><a href="/catalog/category/saiding/tsokolnyi-saiding-dolomit/"><img alt=""
+                                src="/media/categories/images/6aaba826af1f4d99bdf030c69a227f32.55x55.png">Цокольный
+                              сайдинг доломит</a></li>
+                          <li><a href="/catalog/category/saiding/podshivka-karniza-sofitami-s/"><img alt=""
+                                src="/media/categories/images/4bf05d79d6a84dca99b51e81e296f134.55x55.png">Подшивка карниза
+                              софитами</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/146969c26195466785251ed4fe64693c.svg"
+                        data-white-icon="/media/categories/images/icons/b1b7f0ef6e6f43a9ba971283ea27d733.svg"><a
+                          href="/catalog/fasad-shtukaturnyi/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/146969c26195466785251ed4fe64693c.svg"></span>
+                          <span>Фасад штукатурный</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-weber/"><img alt=""
+                                src="/media/categories/images/6ab703ea0f58410ea469d235512386ea.55x55.png">Фасад weber</a>
+                          </li>
+                          <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-ceresit/"><img alt=""
+                                src="/media/categories/images/727ee55d6cd5446e8c35a01dc8374be5.55x55.png">Фасад
+                              ceresit</a></li>
+                          <li><a href="/catalog/category/fasad-shtukaturnyi/fasad-bystroi/"><img alt=""
+                                src="/media/categories/images/664318b4ff4d4619994d59ca6dc29b07.55x55.jpg">Фасад
+                              быстрой</a></li>
+                          <li><a href="/catalog/category/fasad-shtukaturnyi/fasadnye-utepliteli/"><img alt=""
+                                src="/media/categories/images/1a75bbc0363b46c48fa7605740cdcf15.55x55.png">Фасадные
+                              утеплители</a></li>
+                          <li><a
+                              href="/catalog/category/fasad-shtukaturnyi/fasadnaia-kraska-i-komplektuiushchie-dlia-fasada/"><img
+                                alt="" src="/media/categories/images/64868b76121b4d64a0b61ac3eeadadae.55x55.png">Фасадная
+                              краска и комплектующие для фасада</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/0d91486909c847228e9c114f7a0c9b7a.svg"
+                        data-white-icon="/media/categories/images/icons/9c66ef3696cd43dd9a555609384a843f.svg"><a
+                          href="/catalog/zabor-i-terrasa/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/0d91486909c847228e9c114f7a0c9b7a.svg"></span>
+                          <span>Забор и терраса</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/zabor-i-terrasa/proflist-dlia-zabora/"><img alt=""
+                                src="/media/categories/images/2389b882792943198cd5c9a61eed3d88.55x55.png">Профлист для
+                              забора</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/metallicheskii-shtaket/"><img alt=""
+                                src="/media/categories/images/7d733d9b479347cfbe0937b14497e5aa.55x55.png">Металлический
+                              штакет</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/setka-rabica/"><img alt=""
+                                src="/media/categories/images/040793d774e746139e2d77f171225b01.55x55.jpg">Сетка-рабица</a>
+                          </li>
+                          <li><a
+                              href="/catalog/category/zabor-i-terrasa/terrasnaia-doska-iz-drevesno-polimernogo-kompozita/"><img
+                                alt="" src="/media/categories/images/7a2f69ecb3f0487ebeb110c59c075a06.55x55.png">Террасная
+                              доска из древесно-полимерного композита</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/komplektuiushchie-dlia-zabora/"><img alt=""
+                                src="/media/categories/images/3c46be16c1f947a4ae86775bde7f62e1.55x55.png">Комплектующие
+                              для забора</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/zamochno-skobianye-izdeliia/"><img alt=""
+                                src="/media/categories/images/7d79f0844732460cb5162cc30f203e5e.55x55.png">Замочно-скобяные
+                              изделия</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/panelnye-ograzhdeniia-grand-line/"><img alt=""
+                                src="/media/categories/images/2e75c06bfe2041228e3fb932047ff0b9.55x55.png">Панельные
+                              ограждения grand line</a></li>
+                          <li><a href="/catalog/category/zabor-i-terrasa/modulnye-ograzhdeniia-grand-line/"><img alt=""
+                                src="/media/categories/images/77716931603443d8bc61b2444512d848.55x55.png">Модульные
+                              ограждения grand line</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/c83dcbb45e8b49bbb5d3b2ee13ad2cb7.svg"
+                        data-white-icon="/media/categories/images/icons/f76d2a09cbf54fc784d661112ec1df9b.svg"><a
+                          href="/catalog/kommunikatsii/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/c83dcbb45e8b49bbb5d3b2ee13ad2cb7.svg"></span>
+                          <span>Коммуникации</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/kommunikatsii/kolodca-i-lyuki/"><img alt=""
+                                src="/media/categories/images/79a9fa7443b348feaf9a1bc591f0b06f.55x55.png">Люки</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/elementy-kolodcev/"><img alt=""
+                                src="/media/categories/images/6a71af530efe45578c42f33e3bc18e91.55x55.png">Элементы
+                              колодцев</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/tioplyi-pol/"><img alt=""
+                                src="/media/categories/images/9fd83c468f6748deb2326e2f78701548.55x55.webp">Тёплый пол</a>
+                          </li>
+                          <li><a href="/catalog/category/kommunikatsii/kanalizatsionnye-truby/"><img alt=""
+                                src="/media/categories/images/b943d2056aaf44918e32381c81a22f0a.55x55.webp">Канализационные
+                              трубы и комплектующие</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/polipropilenovye-truby/"><img alt=""
+                                src="/media/categories/images/9dad0e367eea421f8f53623a8b76cf11.55x55.webp">Полипропиленовые
+                              трубы и комплектующие</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/pnd-truby-kompressionnye-fitingi/"><img alt=""
+                                src="/media/categories/images/519956a427614152aff36f22581fbc67.55x55.webp">Пнд трубы и
+                              компрессионные фитинги</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/radiatory/"><img alt=""
+                                src="/media/categories/images/7962549f9f9348b69c0f139e69fe6152.55x55.webp">Радиаторы</a>
+                          </li>
+                          <li><a href="/catalog/category/kommunikatsii/avtonomnaya-kanalizaciya-kolo-vesi/"><img alt=""
+                                src="/media/categories/images/79566c95a781499dbc044ed509147c71.55x55.png">Автономная
+                              канализация Kolo Vesi</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/pogreba-kellari/"><img alt=""
+                                src="/media/categories/images/d027db31ad4f43b39ac6b9e444e490c1.55x55.png">Погреба
+                              Kellari</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/kessony-korsu/"><img alt=""
+                                src="/media/categories/images/3846e4be7ff24405bf3949455f6aa651.55x55.png">Кессоны
+                              Korsu</a></li>
+                          <li><a href="/catalog/category/kommunikatsii/lyuki-revizionnye/"><img alt=""
+                                src="/media/categories/images/ae3414b122334952a04bd0c4c745b477.55x55.webp">Люки
+                              ревизионные</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/e123cd8a62734b6a8f6782cd1325cc95.svg"
+                        data-white-icon="/media/categories/images/icons/8b58286c4cea42cc8d56638a1bcc58ee.svg"><a
+                          href="/catalog/instrument-i-raskhodniki/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/e123cd8a62734b6a8f6782cd1325cc95.svg"></span>
+                          <span>Инструмент и расходники</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/instrument-ruchnoi/"><img alt=""
+                                src="/media/categories/images/19fe33fba45d4b73b8cbeddb7440404a.55x55.png">Инструмент
+                              ручной</a></li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/raskhod-materialy/"><img alt=""
+                                src="/media/categories/images/87f03993eb1a42fa9e64591c9f47e51e.55x55.png">Расходные
+                              материалы</a></li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/elektroinstrument/"><img alt=""
+                                src="/media/categories/images/ed30be95eb2b4496b715786e4bbb56ae.55x55.png">Электроинструмент</a>
+                          </li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/metizy/"><img alt=""
+                                src="/media/categories/images/5f9ac78a4a18427da771409e9bbddc6a.55x55.png">Метизы</a></li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/instrument-ruchnoi-po-gazobetonu/"><img
+                                alt=""
+                                src="/media/categories/images/fc12f53993d6489eb8cbf8129e5d4c43.55x55.png">Инструмент
+                              ручной по газобетону</a></li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/krepezhnye-ugolki-i-plastiny/"><img
+                                alt="" src="/media/categories/images/d3df1e395e764e5ab099d671bc744dc6.55x55.png">Крепежные
+                              уголки и пластины</a></li>
+                          <li><a href="/catalog/category/instrument-i-raskhodniki/opora-brusa-derzhatel-balki/"><img
+                                alt="" src="/media/categories/images/9759424add4f433187675ff911cebde7.55x55.png">Опора
+                              бруса, держатель балки</a></li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/44f65a878dd34d5e972d483a326d6af0.svg"
+                        data-white-icon="/media/categories/images/icons/590b5f795f8d4b70884c053301be460c.svg"><a
+                          href="/catalog/elektrika/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/44f65a878dd34d5e972d483a326d6af0.svg"></span>
+                          <span>Электрика</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/elektrika/kabel/"><img alt=""
+                                src="/media/categories/images/b7031b99ac184ba7ae07ea0b005c7ba6.55x55.jpg">Кабель</a></li>
+                          <li><a href="/catalog/category/elektrika/avtomaty/"><img alt=""
+                                src="/media/categories/images/2eb2f098814b49748df0f9cb8f9b1e8f.55x55.jpg">Автоматы</a>
+                          </li>
+                          <li><a href="/catalog/category/elektrika/klemmy/"><img alt=""
+                                src="/media/categories/images/ad5801a47e9b478b935e1a679fd43466.55x55.jpg">Клеммы</a></li>
+                          <li><a href="/catalog/category/elektrika/korobki/"><img alt=""
+                                src="/media/categories/images/9d82e9a84bb646ffb19eaef5083cf5dd.55x55.jpg">Коробки</a></li>
+                          <li><a href="/catalog/category/elektrika/rozetki-vykliuchateli/"><img alt=""
+                                src="/media/categories/images/0aaf405cf07549249a83cadb705309e3.55x55.jpg">Розетки,
+                              выключатели</a></li>
+                          <li><a href="/catalog/category/elektrika/lampy-patron-stiazhka/"><img alt=""
+                                src="/media/categories/images/6fa55f4d4df049588a365ecf1d2b1de1.55x55.jpg">Лампы и
+                              патрон</a></li>
+                          <li><a href="/catalog/category/elektrika/teplyj-pol-a/"><img alt=""
+                                src="/media/categories/images/e5cb0706f04d484b855e6d1d90b6c41d.55x55.png">Теплый пол</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/22832da7a1614559a76efd19c6fe9986.svg"
+                        data-white-icon="/media/categories/images/icons/518a600c477a4910a2ce25155059a8b7.svg"><a
+                          href="/catalog/nasosy/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/22832da7a1614559a76efd19c6fe9986.svg"></span>
+                          <span>Насосы</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/nasosy/poverkhnostnye/"><img alt=""
+                                src="/media/categories/images/088391622c624f4ebf6db2106bc5027a.55x55.png">Поверхностные</a>
+                          </li>
+                          <li><a href="/catalog/category/nasosy/drenazhnye/"><img alt=""
+                                src="/media/categories/images/3d04077175544c09b2cee5e5a766da5f.55x55.png">Дренажные</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/e56b977ffc774ba086ee1a60c653a62e.svg"
+                        data-white-icon="/media/categories/images/icons/08a35e4420c34d619bd735b1b60a73df.svg"><a
+                          href="/catalog/komplekty/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/e56b977ffc774ba086ee1a60c653a62e.svg"></span>
+                          <span>Комплекты</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul></ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/03abdf4342bd4d5782a0c9b06c228520.svg"
+                        data-white-icon="/media/categories/images/icons/0f59ddda1b6947a887ad0c85a29ba380.svg"><a
+                          href="/catalog/rasprodazha-i-nelikvid/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/03abdf4342bd4d5782a0c9b06c228520.svg"></span>
+                          <span>Уцененный товар</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul></ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/56ca69b78a9e4e90b4996065938d260b.svg"
+                        data-white-icon="/media/categories/images/icons/53665143f9b0466594f2938403178c53.svg"><a
+                          href="/catalog/karkasnye-doma-i-bani/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/56ca69b78a9e4e90b4996065938d260b.svg"></span>
+                          <span>Каркасные дома и бани</span> <span><svg fill="none" height="13" viewBox="0 0 12 13"
+                              width="12" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul></ul>
+                      </li>
+                      <li data-icon="/media/categories/images/icons/5307a0bbf3fd42a496b1a541837a5ece.svg"
+                        data-white-icon="/media/categories/images/icons/6173bc4299e34dc08fe19fdd9c8ba354.svg"><a
+                          href="/catalog/osveshenie/"><span><img alt="" class="icon"
+                              src="/media/categories/images/icons/5307a0bbf3fd42a496b1a541837a5ece.svg"></span>
+                          <span>Освещение</span> <span><svg fill="none" height="13" viewBox="0 0 12 13" width="12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0H7.57723V7.57723" stroke="#BDBDBD" transform="translate(5.78418 1) rotate(45)">
+                              </path>
+                            </svg></span></a>
+                        <ul>
+                          <li><a href="/catalog/category/osveshenie/svetodiodnye-lenty/"><img alt=""
+                                src="/media/categories/images/59c06961f2d14f278d76225279a27191.55x55.jpg">Светодиодные
+                              ленты</a></li>
+                          <li><a href="/catalog/category/osveshenie/linejnye-svetilniki/"><img alt=""
+                                src="/media/categories/images/ec31c9f756fb4f8f863d741c2639c8bd.55x55.jpg">Подвесные и
+                              накладные линейные светильники</a></li>
+                        </ul>
+                      </li>
+                    </ul><a class="btn_close__rubrics__mobile__container noclone" href="#"><svg fill="none" height="13"
+                        viewBox="0 0 21 13" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.75069 0L0 14.2631L14.2631 13.5124" stroke="#1F1F1F"
+                          transform="translate(0.243469 1.58545) rotate(-45)"></path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__wrapper content__wrapper__mainpage subcategory_content__wrapper">
+        <div class="row">
+          <div class="col-12 with_sidebar__content">
+            <div class="breadcrumbs__wrapper">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li>Сравнение</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="compare-main content__wrapper content__wrapper__mainpage">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header">
+              <h2 class="section-title">
+                Оформление заказа
+              </h2>
+            </div>
+
+            <div class="section-filter">
+              <div class="buttons-filter">
+                <div class="buttons-filter-srollable">
+                  <button type="button" class="btn btn-white">
+                    Фанера 6
+  
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button type="button" class="btn btn-white">
+                    Кровля 2
+  
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button type="button" class="btn btn-white">
+                    Водосточные системы 1
+  
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button type="button" class="btn btn-white">
+                    Кровля 2
+  
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button type="button" class="btn btn-white">
+                    Водосточные системы 1
+  
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+  
+                  <button type="button" class="btn btn-plaintext">
+                    <span class="icon">
+                      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+  
+                    Очистить списки
+                  </button>
+                </div>
+  
+                <button type="button" class="btn btn-plaintext">
+                  <span class="icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.8067 3.14198L12.86 2.19531L8.00003 7.06198L3.14003 2.19531L2.19336 3.14198L7.06003 8.00198L2.19336 12.862L3.14003 13.8086L8.00003 8.94198L12.86 13.8086L13.8067 12.862L8.94003 8.00198L13.8067 3.14198Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+  
+                  Очистить списки
+                </button>
+              </div>
+              
+              <nav class="pagination">
+                <a href="#" class="pagination-prev">
+                  <span class="icon">
+                    <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5263 20.4737L2 11L12.5263 1.52632" stroke="currentColor" stroke-width="1.73913" />
+                    </svg>
+                  </span>
+                  <span class="text">
+                    Пред.
+                  </span>
+                </a>
+                <div class="pagination-current">
+                  1–4/6
+                </div>
+                <a href="#" class="pagination-next">
+                  <span class="text">
+                    След.
+                  </span>
+                  <span class="icon">
+                    <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.47368 20.4737L16 11L5.47369 1.52632" stroke="currentColor" stroke-width="1.73913" />
+                    </svg>
+                  </spa>
+                </a>
+              </nav>
+            </div>
+
+            <div class="products_catalog__wrapper__mainpage products_catalog__wrapper__shown product-list horisontal_tab_products">
+              <div class="product__wrapper product__wrapper__cols product__wrapper--removable" data-link-href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/" data-price="620.00" data-section-title="Продукты на главной">
+                <div class="row">
+                  <div class="col product__info">
+                    <div class="prodname prodname__full" style="display: none;">
+                      <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                    </div>
+                    <div class="prodname prodname__truncated" style="display: block;">
+                      <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                    </div>
+                    <div class="infoprice">
+                      <div class="stock__wrapper">
+                        <div class="stock__wrapper">
+                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                          много
+                        </div>
+                      </div>
+                      <div class="ratio-list">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/?scroll_to_reviews=true">Оставьте отзыв</a>
+                      </div>
+                      <p class="single_price">
+                        <span>625 р./шт</span>
+                      </p>
+                    </div>
+                    <div class="actualprice">
+                      <p class="product_page__price__wrapper">
+                        <span class="product_page__price__title">Цена через <br> интернет</span>
+                        <span class="product_page__price__amount">622<i>.50</i></span>
+                        <span class="product_page__price__tag">Р.</span>
+                      </p>
+                    </div>
+                    <div class="buy__wrapper">
+                      <a class="btn btn-primary btn_add_to_cart" data-count="1" data-price="622.5" data-product-id="3514" href="#">
+                        <img alt="" src="/static/assets/images/svg/cart-icon.svg">
+                        В корзину
+                      </a>
+                      <div class="row counter__wrapper">
+                        <div class="col-3">
+                          <a class="btn counter__minus" href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path></svg>
+                          </a>
+                        </div>
+                        <div class="col-6">
+                          <input autocomplete="off" class="form-control" data-product-id="3514" data-single-price="622.5" maxlength="6" name="count" onkeypress="return validateNumsOnly(event);" type="text" value="1">
+                        </div>
+                        <div class="col-3">
+                          <a class="btn counter__plus" href="#">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(11.75 23.75) rotate(-90)"></path></svg>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="product__actions_btn" href="/customers/delivery_calculator/">
+                        <span class="icon">
+                          <svg fill="none" height="24" viewBox="0 0 31 24" width="31" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.91893V0H16.4902V19.027H0V8.91893Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(1 1)"></path><path d="M12.5098 12.4865H0V0H7.39216L12.5098 5.26173L12.5098 12.4865Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(17.4902 7.54053)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(20.3335 17.0537)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(5.54907 17.0537)"></path></svg>
+                        </span>
+                        <span class="caption">
+                          Доставка
+                        </span>
+                      </a>
+                      <div class="prod_tooltip econom_tooltip">
+                        <span class="">Эконом</span>
+                        <svg fill="none" height="54" viewBox="0 0 54 54" width="54" xmlns="http://www.w3.org/2000/svg"><path d="M27 52.5C41.0833 52.5 52.5 41.0833 52.5 27C52.5 12.9167 41.0833 1.5 27 1.5C12.9167 1.5 1.5 12.9167 1.5 27C1.5 41.0833 12.9167 52.5 27 52.5Z" fill="#C1C1C1" id="roundy2" stroke="white" stroke-width="3"></path><path clip-rule="evenodd" d="M43.3668 27.6904H45.9898V30.8891C45.9898 33.5078 38.4689 36.8663 35.7663 37.1355C35.3905 37.2145 35.0065 37.2782 34.6152 37.3263C34.5295 38.0823 34.4851 38.8576 34.4851 39.6474C34.4851 40.3388 34.5194 41.0192 34.5852 41.6852H30.1617C29.5854 40.8456 29.0795 39.9098 28.6578 38.8968C27.4039 39.1455 26.0826 39.2784 24.7175 39.2784C22.9265 39.2784 21.2108 39.0493 19.624 38.6304C19.6074 38.9667 19.5992 39.3056 19.5992 39.6474C19.5992 40.3388 19.6332 41.0192 19.6993 41.6852H15.2758C13.9701 39.7833 13.0266 37.3887 12.6022 34.7192C10.99 33.0402 10.0469 31.0094 10.0469 28.8212C10.0469 27.6175 10.3329 26.4619 10.858 25.3858C10.0435 23.9745 9.95746 22.4346 10.7821 21.4026C10.8461 21.3227 10.9144 21.2477 10.9863 21.1769C11.2485 21.8904 11.6989 22.6021 12.3153 23.2338C14.9157 20.3073 19.4978 18.3641 24.7175 18.3641C27.7821 18.3641 30.6271 19.0341 32.98 20.1796V20.1799L32.9442 20.2816L32.943 20.2856C32.9072 20.3918 32.8744 20.4999 32.8465 20.6095L32.8459 20.6114L32.8416 20.6291L32.8202 20.7176L32.8199 20.7198L32.8162 20.7354L32.8122 20.7531L32.8083 20.7712L32.8006 20.807L32.7969 20.8248L32.7954 20.8309L32.7932 20.8429L32.7896 20.8606L32.7825 20.8968L32.7792 20.9148L32.7758 20.9329L32.774 20.943L32.7727 20.951L32.7697 20.9693L32.7691 20.9718L32.7635 21.0055L32.7605 21.0238L32.7577 21.0419L32.7553 21.0563L32.7547 21.0603L32.7519 21.0783L32.7495 21.0967L32.7443 21.1335L32.7418 21.1518L32.7394 21.1702L32.7372 21.1886L32.7351 21.207L32.7329 21.2256L32.7308 21.244L32.7286 21.2624L32.7268 21.2811L32.7262 21.285L32.725 21.2994L32.7231 21.3181C32.7097 21.4614 32.7026 21.6063 32.7026 21.7529C32.7026 22.1378 32.7504 22.5111 32.8398 22.8682H34.3559C34.3139 22.625 34.2918 22.3748 34.2918 22.1198C34.2918 19.7038 36.2507 17.7449 38.6667 17.7449C39.0489 17.7449 39.4295 17.7951 39.7988 17.894L38.6667 22.1198V22.5932C41.0328 23.736 42.762 25.5567 43.3668 27.6904ZM24.2723 7.17967C27.2879 7.17967 29.7323 9.62417 29.7323 12.6397C29.7323 14.0407 29.2044 15.3182 28.3369 16.2846C27.1752 16.0191 25.9371 15.8752 24.6514 15.8752C23.1365 15.8752 21.6869 16.0748 20.3512 16.4386C19.3989 15.4557 18.8125 14.1163 18.8125 12.6397C18.8125 9.62417 21.257 7.17967 24.2723 7.17967ZM39.0807 25.7456C39.7262 25.7456 40.2495 26.2689 40.2495 26.9144C40.2495 27.5599 39.7262 28.083 39.0807 28.083C38.4352 28.083 37.9119 27.5599 37.9119 26.9144C37.9119 26.2689 38.4352 25.7456 39.0807 25.7456Z" fill="white" fill-rule="evenodd"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col product__preview">
+                    <a class="product__preview__wrapper" href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">
+                      <img alt="ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм" src="/media/products/images/c38ebf268e6a4e519b3a8c3bb7ee4551.catalog_large.webp">
+                    </a>
+                  </div>
+                  <div class="prod_tooltip2 econom_tooltip2">
+                    <span>
+                      <svg fill="none" height="22" viewBox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M21.3215 13.0772H23V15.1166C23 16.7863 18.1874 18.9276 16.4579 19.0992C16.2175 19.1496 15.9718 19.1902 15.7214 19.2208C15.6665 19.7029 15.6381 20.1972 15.6381 20.7007C15.6381 21.1416 15.66 21.5754 15.7022 22H12.8715C12.5028 21.4647 12.1791 20.868 11.9092 20.2222C11.1068 20.3807 10.2613 20.4655 9.3878 20.4655C8.24171 20.4655 7.14382 20.3194 6.12842 20.0523C6.11784 20.2667 6.11255 20.4828 6.11255 20.7007C6.11255 21.1416 6.1343 21.5754 6.17662 22H3.34598C2.51047 20.7874 1.90675 19.2607 1.63517 17.5586C0.603514 16.4881 0 15.1933 0 13.7982C0 13.0307 0.183014 12.2939 0.519062 11.6079C-0.00215561 10.708 -0.0572162 9.72619 0.470468 9.06825C0.51142 9.01729 0.555115 8.96946 0.601162 8.92436C0.768893 9.37926 1.05713 9.83299 1.45157 10.2358C3.11555 8.3699 6.04769 7.13094 9.3878 7.13094C11.3488 7.13094 13.1694 7.55811 14.675 8.28848V8.28868L14.6521 8.3535L14.6513 8.35604C14.6284 8.42378 14.6074 8.4927 14.5896 8.56259L14.5892 8.56377L14.5864 8.57509L14.5727 8.63151L14.5725 8.63288L14.5702 8.64284L14.5676 8.65416L14.5651 8.66568L14.5602 8.68852L14.5578 8.69984L14.5569 8.70375L14.5555 8.71136L14.5531 8.72269L14.5486 8.74572L14.5465 8.75724L14.5443 8.76876L14.5431 8.77521L14.5424 8.78028L14.5404 8.792L14.54 8.79356L14.5365 8.81503L14.5345 8.82675L14.5328 8.83827L14.5312 8.84744L14.5308 8.84998L14.529 8.8615L14.5275 8.87321L14.5241 8.89664L14.5226 8.90835L14.521 8.92007L14.5196 8.93178L14.5183 8.9435L14.5169 8.95541L14.5155 8.96712L14.5141 8.97884L14.513 8.99074L14.5126 8.99328L14.5118 9.00246L14.5106 9.01437C14.502 9.10574 14.4975 9.19808 14.4975 9.2916C14.4975 9.53701 14.5281 9.775 14.5853 10.0026H15.5554C15.5286 9.84763 15.5145 9.68812 15.5145 9.52549C15.5145 7.98509 16.7679 6.73618 18.3139 6.73618C18.5585 6.73618 18.802 6.76819 19.0384 6.83125L18.3139 9.52549V9.82732C19.828 10.5559 20.9345 11.7168 21.3215 13.0772ZM9.10289 0C11.0326 0 12.5968 1.55856 12.5968 3.48123C12.5968 4.37442 12.259 5.18894 11.7039 5.8051C10.9605 5.63583 10.1682 5.54407 9.34547 5.54407C8.37612 5.54407 7.44851 5.67137 6.59379 5.90331C5.9844 5.2766 5.60916 4.42265 5.60916 3.48123C5.60916 1.55856 7.1734 0 9.10289 0ZM18.5789 11.8373C18.9919 11.8373 19.3268 12.1709 19.3268 12.5825C19.3268 12.994 18.9919 13.3275 18.5789 13.3275C18.1658 13.3275 17.8309 12.994 17.8309 12.5825C17.8309 12.1709 18.1658 11.8373 18.5789 11.8373Z" fill="white" fill-rule="evenodd"></path></svg>
+                      Эконом
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product__wrapper-remove">
+                  <button type="button" class="btn btn-outline-crimson">
+                    <span class="icon">
+                      <svg viewBox="0 0 19 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2825 3.53473L15.2175 2.46973L9.75003 7.94473L4.28253 2.46973L3.21753 3.53473L8.69253 9.00223L3.21753 14.4697L4.28253 15.5347L9.75003 10.0597L15.2175 15.5347L16.2825 14.4697L10.8075 9.00223L16.2825 3.53473Z" />
+                      </svg>
+                    </span>
+
+                    Удалить
+                  </button>
+                </div>
+              </div>
+              <div class="product__wrapper product__wrapper__cols product__wrapper--add">
+                <button class="btn btn-primary btn-add">
+                  <span class="icon">
+                    <svg viewBox="0 0 27 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.6572 13.3145V14.7119H0.342773V13.3145H26.6572ZM13.9746 0.0253906V27.9746H12.5244V0.0253906H13.9746Z"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <ul class="detail-products">
+              <li class="detail-product">
+                <div class="detail-product-title">
+                  Бренд
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    Kronospan
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-product">
+                <div class="detail-product-title no-point">
+                  Сорт
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    II
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-product">
+                <div class="detail-product-title no-point">
+                  Предназначение
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    Предназначена для обшивки стен, потолков, перегородок, в качестве настила под напольные покрытия, для опалубки, для изготовления тары и упаковки, а также в мебельном производстве.
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-product">
+                <div class="detail-product-title">
+                  Класс
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    -
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-product">
+                <div class="detail-product-title no-point">
+                  Коэффициент
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    1.5
+                  </li>
+                </ul>
+              </li>
+              <li class="detail-product">
+                <div class="detail-product-title no-point">
+                  Материал
+                </div>
+
+                <ul class="detail-product-info">
+                  <li class="detail-product-info-item">
+                    Берёза
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer footer-panel">
+  <div class="footer-menu">
+    <div class="footer-menu__content">
+      <div class="footer-menu__col footer-menu__col-first">
+        <ul class="footer-menu-accordion">
+          <li><a class="opener" href="#">Каталог</a>
+            <ul class="submenu">
+              <li><a href="/catalog/obshchestroitelnye/"><span>Общестроительные</span></a></li>
+              <li><a href="/catalog/pilomaterialy/"><span>Пиломатериалы</span></a></li>
+              <li><a href="/catalog/krovlia-metallicheskaia/"><span>Кровля металлическая</span></a></li>
+              <li><a href="/catalog/vodostochnye-sistemy/"><span>Водосточные системы</span></a></li>
+              <li><a href="/catalog/mjagkaya-krovlia/"><span>Мягкая кровля</span></a></li>
+              <li><a href="/catalog/teploizoliatsiia/"><span>Теплоизоляция</span></a></li>
+              <li><a href="/catalog/fanera-osb-dsp-dvp-tssp/"><span>Фанера, осб, дсп, двп, цсп</span></a></li>
+              <li><a href="/catalog/otdelka-chernovaya-cement/"><span>Отделка черновая</span></a></li>
+              <li><a href="/catalog/otdelka-finishnaia/"><span>Отделка финишная</span></a></li>
+              <li><a href="/catalog/kraski-peny-germetiki/"><span>Краски, пены, герметики</span></a></li>
+              <li><a href="/catalog/saiding/"><span>Сайдинг</span></a></li>
+              <li><a href="/catalog/fasad-shtukaturnyi/"><span>Фасад штукатурный</span></a></li>
+              <li><a href="/catalog/zabor-i-terrasa/"><span>Забор и терраса</span></a></li>
+              <li><a href="/catalog/kommunikatsii/"><span>Коммуникации</span></a></li>
+              <li><a href="/catalog/instrument-i-raskhodniki/"><span>Инструмент и расходники</span></a></li>
+              <li><a href="/catalog/elektrika/"><span>Электрика</span></a></li>
+              <li><a href="/catalog/nasosy/"><span>Насосы</span></a></li>
+              <li><a href="/catalog/komplekty/"><span>Комплекты</span></a></li>
+              <li><a href="/catalog/rasprodazha-i-nelikvid/"><span>Уцененный товар</span></a></li>
+              <li><a href="/catalog/karkasnye-doma-i-bani/"><span>Каркасные дома и бани</span></a></li>
+              <li><a href="/catalog/osveshenie/"><span>Освещение</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-menu__col">
+        <ul class="footer-menu-accordion">
+          <li><a class="opener" href="#">Как купить</a>
+            <ul class="submenu">
+              <li><a href="/customers/delivery_calculator/">Доставка от 790р.</a></li>
+              <li><a href="/payment/">Оплата</a></li>
+              <li><a href="/return-policy/">Правила возврата товара</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-menu-accordion">
+          <li><a class="opener" href="#">Для клиентов</a>
+            <ul class="submenu">
+              <li><a href="/blog/">Блог - Грубая правда</a></li>
+              <li><a href="/special-offers/">Акции</a></li>
+              <li><a href="/customers/delivery_calculator/">Калькулятор доставки</a></li>
+              <li><a href="/discount-cards/">Скидочные карты</a></li>
+              <li><a href="/knowledge/">База знаний</a></li>
+              <li><a href="/companies/">Честные строители</a></li>
+              <li><a href="/privacy/">Политика конфиденциальности</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-menu__col">
+        <ul class="footer-menu-accordion">
+          <li><a class="opener" href="#">О компании</a>
+            <ul class="submenu">
+              <li><a href="/about/">О компании</a></li>
+              <li><a href="/rabotabezopita/">Вакансии в Центральном офисе</a></li>
+              <li><a href="/vacancybaza/">Вакансии на Торговой базе (точке)</a></li>
+              <li><a href="/partnership/">Сотрудничество</a></li>
+              <li><a href="/partner-map-access/">Не франшиза</a></li>
+              <li><a href="/requisites/">Реквизиты</a></li>
+              <li><a href="/contacts/">Контакты</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-menu__right">
+      <div class="footer__logotype">
+        <p>Стройматериалы <br> по красным ценам</p><img alt="Логотип" class="lazy"
+          src="/static/assets/images/svg/logotype/footlogo.svg" style="">8 (846) 267-35-47 <a class="btn btn-default"
+          href="/contacts/">Перейти в контакты</a>
+        <div class="payment_methods__icons">
+          <div><img alt="" class="payment_mastercard lazy" src="/static/assets/images/svg/mastercard.svg" style="">
+          </div>
+          <div><img alt="" class="payment_jcb lazy" src="/static/assets/images/svg/jcb.svg" style=""></div>
+          <div><img alt="" class="payment_visa lazy" src="/static/assets/images/svg/visa.svg" style=""></div>
+          <div><img alt="" class="payment_mir lazy" src="/static/assets/images/svg/mir.svg" style=""></div>
+        </div>
+        <ul class="socials">
+          <li><a href="https://vk.com/redprice63" target="_blank"><svg fill="none" height="19" viewBox="0 0 32 19"
+                width="32" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M29.847 18.2067C28.78 18.9054 24.4393 19.1133 23.3888 18.3153C22.8124 17.8779 22.2855 17.3301 21.7847 16.8093C21.4351 16.4448 21.0373 16.2678 20.7367 15.8723C20.4918 15.5483 20.3233 15.1666 20.0645 14.8479C19.6283 14.3116 18.9561 13.8557 18.4241 14.5107C17.6239 15.4954 18.5503 17.4312 17.4829 18.1674C17.1248 18.4146 16.7638 18.4861 16.3167 18.4508L15.3261 18.498C14.7438 18.5099 13.8221 18.5152 13.1604 18.3903C12.4215 18.2513 11.8122 17.8293 11.1451 17.5195C9.87749 16.932 8.66946 16.1314 7.75066 15.0222C5.25014 12.002 1.89121 7.84779 0.586484 4.05025C0.317516 3.26991 -0.390582 1.72556 0.281204 1.05601C1.19493 0.362177 5.68125 0.165768 6.38048 1.23962C6.66507 1.67525 6.8441 2.31479 7.04509 2.80868C7.29506 3.42483 7.43102 4.00612 7.82202 4.55165C8.16825 5.03583 8.42413 5.52222 8.69226 6.05318C8.99331 6.64859 9.27706 7.21972 9.64314 7.76834C9.89142 8.1413 10.548 8.88236 10.9626 8.93797C11.9752 9.07347 11.9118 6.50117 11.8367 5.87266C11.7649 5.26755 11.7459 4.6258 11.7649 4.01185C11.7814 3.48839 11.8266 2.75086 11.5297 2.32318C11.0463 1.62581 9.96953 2.14795 9.88509 1.21093C10.0633 0.944784 10.0253 0.708652 11.2135 0.299945C12.1487 -0.0218131 12.753 -0.0116619 13.3698 0.0399782C14.6281 0.145465 15.962 -0.210719 17.1759 0.215643C18.3354 0.623909 18.1564 2.34657 18.1175 3.37937C18.0656 4.78955 18.1209 6.16529 18.1175 7.59577C18.1158 8.24767 18.0914 8.88103 18.8505 8.82851C19.5633 8.77864 19.6355 8.15233 19.9754 7.63505C20.4487 6.91429 20.8824 6.18383 21.3641 5.46528C22.0131 4.49471 22.2086 3.40409 22.8196 2.40969C23.0383 2.0535 23.2262 1.27625 23.5628 0.9951C23.8178 0.782801 24.3017 0.873723 24.6099 0.873723H25.3429C25.9045 0.880785 26.4771 0.889171 27.0534 0.910357C27.884 0.94037 28.8142 0.751906 29.638 0.873282C33.1916 1.39763 25.1715 9.34359 25.5887 10.7613C25.8775 11.7402 27.7066 12.837 28.367 13.6394C29.2474 14.7067 31.9459 16.8336 29.847 18.2067Z"
+                  fill="#4C75A3" transform="translate(0.510742 0.137695)"></path>
+              </svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCr5Vc13k4NiPdDR6vedLpqw" target="_blank"><svg fill="none"
+                height="22" viewBox="0 0 28 22" width="28" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.41 4.51447C26.41 4.51447 26.1498 2.46339 25.3501 1.56032C24.3352 0.376569 23.1986 0.369596 22.6774 0.302476C18.944 1.03913e-07 13.3443 0 13.3443 0H13.3318C13.3318 0 7.73204 1.03913e-07 3.99944 0.302476C3.47825 0.369596 2.34246 0.376569 1.32675 1.56032C0.527867 2.46339 0.266852 4.51447 0.266852 4.51447C0.266852 4.51447 0 6.9212 0 9.32793V11.5839C0 13.9923 0.266852 16.3982 0.266852 16.3982C0.266852 16.3982 0.527033 18.4484 1.32675 19.3497C2.34246 20.5335 3.67422 20.4977 4.26796 20.6215C6.40195 20.8499 13.3384 20.9205 13.3384 20.9205C13.3384 20.9205 18.944 20.91 22.6774 20.6111C23.1986 20.5413 24.3352 20.5343 25.3501 19.3506C26.149 18.4493 26.41 16.3991 26.41 16.3991C26.41 16.3991 26.6769 13.9923 26.6769 11.5847V9.3288C26.6769 6.9212 26.41 4.51447 26.41 4.51447Z"
+                  fill="#E02F2F" transform="translate(0.420898 0.0917969)"></path>
+                <path d="M0 0V10.4603L8.33912 5.23013L0 0Z" fill="white" transform="translate(10.4277 5.32227)"></path>
+              </svg></a></li>
+        </ul>
+        <p class="public-offerta">Информация представленная на сайте, не является публичной офертой (ст. 437 ГК РФ).
+          Цены указаны в ознакомительных целях.</p>
+      </div>
+    </div>
+  </div>
+  <div class="block-active-locations">
+    <div class="block-title">Пункты выдачи товаров:</div>
+    <div class="block-title subtitle">Самарская область</div>
+    <ul>
+      <li><strong>Самара</strong>: <a href="/?partner=redprice">ООО "Красная цена". Самара, Олимпийская 73А</a></li>
+      <li><strong>Волжский</strong>: <a href="/?partner=volzh">Волжский. Волжский</a></li>
+      <li><strong>Красный Яр</strong>: <a href="/?partner=lesmarket">Красный Яр. Красный Яр</a></li>
+      <li><strong>Кинель</strong>: <a href="/?partner=kinel">ООО "Красная цена" Кинель. Кинель</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer__bottom-panel">
+  <div class="footer_container">
+    <div class="mobile-left"><a class="footer-link footer-link--search"><span class="icon"><img alt=""
+            src="/static/assets/images/svg/search-icon.svg"></span>Поиск</a> <a
+        class="footer-link footer-link--call"><span class="icon"><img alt=""
+            src="/static/assets/images/svg/phone-icon.svg"></span>Звонок</a>
+      <div class="mobile-phone-show"><a class="mobile-phone-show__green js-callmeback"
+          data-popup-name="call_me_back__popup" href=""><span class="icon"><img alt=""
+              src="/static/assets/images/svg/call-icon-1.svg"></span>Перезвоните мне</a> <a
+          class="mobile-phone-show__blue" href="tel:+78462673547"><span class="icon"><img alt=""
+              src="/static/assets/images/svg/call-icon-2.svg"></span> Позвонить в магазин</a></div>
+    </div>
+    <div class="search-mobile">
+      <form action="/catalog/catalog_search/" method="get"><input data-mobilebottom="true" data-url="/catalog/search/"
+          name="query" placeholder="Поиск..." type="text"><img alt="" src="/static/assets/images/svg/black-cross.svg">
+      </form>
+    </div>
+    <div class="left-bottom-panel bottom-panel-buttons"><button
+        class="footer__button-feedback mobile-hide js-callmeback" data-popup-name="call_me_back__popup"
+        type="button">Перезвоните мне</button>
+      <div class="safety-message toggle-section"><a class="toggle-section__trigger button button_style-1"
+          href="javascript:void(0);"><img alt="icon" class="icon"
+            src="/static/img/print.svg"><span>Безопасность</span></a>
+        <div class="safety-message__popup toggle-section__content"><a
+            class="safety-message__popup-close toggle-section__close" href="javascript:void(0);"></a> <span>Наш сайт
+            использует cookie, данные об IP-адресе, местоположении. Если Вы не хотите, чтобы эти данные обрабатывались,
+            то должны покинуть сайт.</span></div>
+      </div><a class="button button_style-1 js-up visible" href="javascript:void(0);"><img alt="icon" class="icon"
+          src="/static/img/arrow-bordered.svg"><span>Наверх</span></a>
+    </div>
+    <div class="footer___bottom_panel__message" data-close-delay="5s">
+      <p class="message__wrapper"></p><a class="btn_submit_order" data-url="/customers/order/" href="#">Посмотреть</a>
+    </div>
+    <div class="right-bottom-panel">
+      <div class="footer__basket bottom_cart"><svg fill="none" height="21" viewBox="0 0 23 21" width="23"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.7764 5.0518e-08L17.7986 6.94406C17.1271 8.34025 15.9288 8.34025 15.5645 8.34025H4.61869C4.25433 8.34025 2.46017 8.34025 1.97773 6.94406L-3.78277e-08 5.0518e-08"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+            transform="translate(1.75488 11.6598)"></path>
+          <path
+            d="M21.2846 4.04006C21.2846 4.4137 20.9672 4.7164 20.5752 4.7164H0.709362C0.317322 4.7164 0 4.4137 0 4.04006V0.676339C0 0.302697 0.317322 -7.21686e-09 0.709362 -7.21686e-09H20.5743C20.9663 -7.21686e-09 21.2836 0.302697 21.2836 0.676339V4.04006H21.2846Z"
+            stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+            transform="translate(1 6.94336)"></path>
+          <path d="M-1.61867e-07 5.94421L3.51637 0" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="10" transform="translate(5.50531 1)"></path>
+          <path d="M3.51637 5.94421L7.03772e-09 0" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="10" transform="translate(14.5757 1)"></path>
+        </svg><span class="footer__basket-title">Корзина</span> <span class="footer__basket-number">0</span> <span
+          class="footer__basket-sum">0 р.</span></div>
+      <div data-ajax-cart-total="/catalog/ajax_get_cart_total/" data-ajax-url="/catalog/ajax_add_to_cart/"
+        id="order_cart"><input name="csrfmiddlewaretoken" type="hidden"
+          value="38R9rNmOm0hWcFQRqJDmqb6vkUMdXy1UIYUACfya9mybN3kRBdHJPccuSUfDFt6r"><button
+          class="footer__basket-button btn_submit_order" data-url="/customers/order/" type="button">Оформить
+          <span>заказ</span></button></div>
+    </div>
+  </div>
+</div>
+    <script src="https://red-price63.ru/static/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://red-price63.ru/static/assets/libs/OwlCarousel2/owl.carousel.min.js"></script>
+<script src="https://red-price63.ru/static/assets/libs/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="https://red-price63.ru/static/assets/js/jquery.waypoints.min.js"></script>
+<script src="https://red-price63.ru/static/assets/js/jquery.waypoints.min.js"></script>
+<script src="https://red-price63.ru/static/assets/js/jquery.waypoints.min.js"></script>
+<script async="" src="https://red-price63.ru/static/CACHE/js/output.5395677beb61.js"></script>
+<script src="https://red-price63.ru/static/CACHE/js/output.e8f7a9549df5.js"></script>
+<script src="https://red-price63.ru/static/marketplace/marketplace_base.js?v4"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.breadcrumbs__wrapper {
+
+	ul {
+
+		&,
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: .375rem;
+		}
+
+		li {
+			
+			&::after {
+				color: #828282;
+				top: 0;
+			}
+
+			&:first-child {
+				
+				a {
+					color: #000;
+				}
+			}
+
+			&:last-child {
+				color: #828282;
+			}
+		}
+	}
+}
