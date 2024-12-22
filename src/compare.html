@@ -1228,8 +1228,8 @@
                 </button>
               </div>
               
-              <nav class="pagination">
-                <a href="#" class="pagination-prev">
+              <div class="owl-pagination--compare">
+                <button type="button" class="prev">
                   <span class="icon">
                     <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12.5263 20.4737L2 11L12.5263 1.52632" stroke="currentColor" stroke-width="1.73913" />
@@ -1238,11 +1238,9 @@
                   <span class="text">
                     Пред.
                   </span>
-                </a>
-                <div class="pagination-current">
-                  1–4/6
-                </div>
-                <a href="#" class="pagination-next">
+                </button>
+                <span class="counter"></span>
+                <button type="button" class="next">
                   <span class="text">
                     След.
                   </span>
@@ -1250,91 +1248,92 @@
                     <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.47368 20.4737L16 11L5.47369 1.52632" stroke="currentColor" stroke-width="1.73913" />
                     </svg>
-                  </spa>
-                </a>
-              </nav>
+                  </span>
+                </button>
+              </div>
             </div>
 
-            <div class="products_catalog__wrapper__mainpage products_catalog__wrapper__shown product-list horisontal_tab_products">
-              <div class="product__wrapper product__wrapper__cols product__wrapper--removable" data-link-href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/" data-price="620.00" data-section-title="Продукты на главной">
-                <div class="row">
-                  <div class="col product__info">
-                    <div class="prodname prodname__full" style="display: none;">
-                      <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
-                    </div>
-                    <div class="prodname prodname__truncated" style="display: block;">
-                      <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
-                    </div>
-                    <div class="infoprice">
-                      <div class="stock__wrapper">
+            <div class="owl-carousel owl-carousel--compare">
+              <div>
+                <div class="product__wrapper product__wrapper__cols product__wrapper--removable" data-link-href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/" data-price="620.00" data-section-title="Продукты на главной">
+                  <div class="row">
+                    <div class="col product__info">
+                      <div class="prodname prodname__full" style="display: none;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="prodname prodname__truncated" style="display: block;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="infoprice">
                         <div class="stock__wrapper">
-                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
-                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
-                          <img alt="" src="/static/assets/images/svg/stock/green.svg">
-                          много
+                          <div class="stock__wrapper">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            много
+                          </div>
+                        </div>
+                        <div class="ratio-list">
+                          <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/?scroll_to_reviews=true">Оставьте отзыв</a>
+                        </div>
+                        <p class="single_price">
+                          <span>625 р./шт</span>
+                        </p>
+                      </div>
+                      <div class="actualprice">
+                        <p class="product_page__price__wrapper">
+                          <span class="product_page__price__title">Цена через <br> интернет</span>
+                          <span class="product_page__price__amount">622<i>.50</i></span>
+                          <span class="product_page__price__tag">Р.</span>
+                        </p>
+                      </div>
+                      <div class="buy__wrapper">
+                        <a class="btn btn-primary btn_add_to_cart" data-count="1" data-price="622.5" data-product-id="3514" href="#">
+                          <img alt="" src="/static/assets/images/svg/cart-icon.svg">
+                          В корзину
+                        </a>
+                        <div class="row counter__wrapper">
+                          <div class="col-3">
+                            <a class="btn counter__minus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path></svg>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <input autocomplete="off" class="form-control" data-product-id="3514" data-single-price="622.5" maxlength="6" name="count" onkeypress="return validateNumsOnly(event);" type="text" value="1">
+                          </div>
+                          <div class="col-3">
+                            <a class="btn counter__plus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(11.75 23.75) rotate(-90)"></path></svg>
+                            </a>
+                          </div>
+                        </div>
+                        <a class="product__actions_btn" href="/customers/delivery_calculator/">
+                          <span class="icon">
+                            <svg fill="none" height="24" viewBox="0 0 31 24" width="31" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.91893V0H16.4902V19.027H0V8.91893Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(1 1)"></path><path d="M12.5098 12.4865H0V0H7.39216L12.5098 5.26173L12.5098 12.4865Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(17.4902 7.54053)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(20.3335 17.0537)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(5.54907 17.0537)"></path></svg>
+                          </span>
+                          <span class="caption">
+                            Доставка
+                          </span>
+                        </a>
+                        <div class="prod_tooltip econom_tooltip">
+                          <span class="">Эконом</span>
+                          <svg fill="none" height="54" viewBox="0 0 54 54" width="54" xmlns="http://www.w3.org/2000/svg"><path d="M27 52.5C41.0833 52.5 52.5 41.0833 52.5 27C52.5 12.9167 41.0833 1.5 27 1.5C12.9167 1.5 1.5 12.9167 1.5 27C1.5 41.0833 12.9167 52.5 27 52.5Z" fill="#C1C1C1" id="roundy2" stroke="white" stroke-width="3"></path><path clip-rule="evenodd" d="M43.3668 27.6904H45.9898V30.8891C45.9898 33.5078 38.4689 36.8663 35.7663 37.1355C35.3905 37.2145 35.0065 37.2782 34.6152 37.3263C34.5295 38.0823 34.4851 38.8576 34.4851 39.6474C34.4851 40.3388 34.5194 41.0192 34.5852 41.6852H30.1617C29.5854 40.8456 29.0795 39.9098 28.6578 38.8968C27.4039 39.1455 26.0826 39.2784 24.7175 39.2784C22.9265 39.2784 21.2108 39.0493 19.624 38.6304C19.6074 38.9667 19.5992 39.3056 19.5992 39.6474C19.5992 40.3388 19.6332 41.0192 19.6993 41.6852H15.2758C13.9701 39.7833 13.0266 37.3887 12.6022 34.7192C10.99 33.0402 10.0469 31.0094 10.0469 28.8212C10.0469 27.6175 10.3329 26.4619 10.858 25.3858C10.0435 23.9745 9.95746 22.4346 10.7821 21.4026C10.8461 21.3227 10.9144 21.2477 10.9863 21.1769C11.2485 21.8904 11.6989 22.6021 12.3153 23.2338C14.9157 20.3073 19.4978 18.3641 24.7175 18.3641C27.7821 18.3641 30.6271 19.0341 32.98 20.1796V20.1799L32.9442 20.2816L32.943 20.2856C32.9072 20.3918 32.8744 20.4999 32.8465 20.6095L32.8459 20.6114L32.8416 20.6291L32.8202 20.7176L32.8199 20.7198L32.8162 20.7354L32.8122 20.7531L32.8083 20.7712L32.8006 20.807L32.7969 20.8248L32.7954 20.8309L32.7932 20.8429L32.7896 20.8606L32.7825 20.8968L32.7792 20.9148L32.7758 20.9329L32.774 20.943L32.7727 20.951L32.7697 20.9693L32.7691 20.9718L32.7635 21.0055L32.7605 21.0238L32.7577 21.0419L32.7553 21.0563L32.7547 21.0603L32.7519 21.0783L32.7495 21.0967L32.7443 21.1335L32.7418 21.1518L32.7394 21.1702L32.7372 21.1886L32.7351 21.207L32.7329 21.2256L32.7308 21.244L32.7286 21.2624L32.7268 21.2811L32.7262 21.285L32.725 21.2994L32.7231 21.3181C32.7097 21.4614 32.7026 21.6063 32.7026 21.7529C32.7026 22.1378 32.7504 22.5111 32.8398 22.8682H34.3559C34.3139 22.625 34.2918 22.3748 34.2918 22.1198C34.2918 19.7038 36.2507 17.7449 38.6667 17.7449C39.0489 17.7449 39.4295 17.7951 39.7988 17.894L38.6667 22.1198V22.5932C41.0328 23.736 42.762 25.5567 43.3668 27.6904ZM24.2723 7.17967C27.2879 7.17967 29.7323 9.62417 29.7323 12.6397C29.7323 14.0407 29.2044 15.3182 28.3369 16.2846C27.1752 16.0191 25.9371 15.8752 24.6514 15.8752C23.1365 15.8752 21.6869 16.0748 20.3512 16.4386C19.3989 15.4557 18.8125 14.1163 18.8125 12.6397C18.8125 9.62417 21.257 7.17967 24.2723 7.17967ZM39.0807 25.7456C39.7262 25.7456 40.2495 26.2689 40.2495 26.9144C40.2495 27.5599 39.7262 28.083 39.0807 28.083C38.4352 28.083 37.9119 27.5599 37.9119 26.9144C37.9119 26.2689 38.4352 25.7456 39.0807 25.7456Z" fill="white" fill-rule="evenodd"></path></svg>
                         </div>
                       </div>
-                      <div class="ratio-list">
-                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/?scroll_to_reviews=true">Оставьте отзыв</a>
-                      </div>
-                      <p class="single_price">
-                        <span>625 р./шт</span>
-                      </p>
                     </div>
-                    <div class="actualprice">
-                      <p class="product_page__price__wrapper">
-                        <span class="product_page__price__title">Цена через <br> интернет</span>
-                        <span class="product_page__price__amount">622<i>.50</i></span>
-                        <span class="product_page__price__tag">Р.</span>
-                      </p>
-                    </div>
-                    <div class="buy__wrapper">
-                      <a class="btn btn-primary btn_add_to_cart" data-count="1" data-price="622.5" data-product-id="3514" href="#">
-                        <img alt="" src="/static/assets/images/svg/cart-icon.svg">
-                        В корзину
+                    <div class="col product__preview">
+                      <a class="product__preview__wrapper" href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">
+                        <img alt="ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм" src="/media/products/images/c38ebf268e6a4e519b3a8c3bb7ee4551.catalog_large.webp">
                       </a>
-                      <div class="row counter__wrapper">
-                        <div class="col-3">
-                          <a class="btn counter__minus" href="#">
-                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path></svg>
-                          </a>
-                        </div>
-                        <div class="col-6">
-                          <input autocomplete="off" class="form-control" data-product-id="3514" data-single-price="622.5" maxlength="6" name="count" onkeypress="return validateNumsOnly(event);" type="text" value="1">
-                        </div>
-                        <div class="col-3">
-                          <a class="btn counter__plus" href="#">
-                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(11.75 23.75) rotate(-90)"></path></svg>
-                          </a>
-                        </div>
-                      </div>
-                      <a class="product__actions_btn" href="/customers/delivery_calculator/">
-                        <span class="icon">
-                          <svg fill="none" height="24" viewBox="0 0 31 24" width="31" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.91893V0H16.4902V19.027H0V8.91893Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(1 1)"></path><path d="M12.5098 12.4865H0V0H7.39216L12.5098 5.26173L12.5098 12.4865Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(17.4902 7.54053)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(20.3335 17.0537)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(5.54907 17.0537)"></path></svg>
-                        </span>
-                        <span class="caption">
-                          Доставка
-                        </span>
-                      </a>
-                      <div class="prod_tooltip econom_tooltip">
-                        <span class="">Эконом</span>
-                        <svg fill="none" height="54" viewBox="0 0 54 54" width="54" xmlns="http://www.w3.org/2000/svg"><path d="M27 52.5C41.0833 52.5 52.5 41.0833 52.5 27C52.5 12.9167 41.0833 1.5 27 1.5C12.9167 1.5 1.5 12.9167 1.5 27C1.5 41.0833 12.9167 52.5 27 52.5Z" fill="#C1C1C1" id="roundy2" stroke="white" stroke-width="3"></path><path clip-rule="evenodd" d="M43.3668 27.6904H45.9898V30.8891C45.9898 33.5078 38.4689 36.8663 35.7663 37.1355C35.3905 37.2145 35.0065 37.2782 34.6152 37.3263C34.5295 38.0823 34.4851 38.8576 34.4851 39.6474C34.4851 40.3388 34.5194 41.0192 34.5852 41.6852H30.1617C29.5854 40.8456 29.0795 39.9098 28.6578 38.8968C27.4039 39.1455 26.0826 39.2784 24.7175 39.2784C22.9265 39.2784 21.2108 39.0493 19.624 38.6304C19.6074 38.9667 19.5992 39.3056 19.5992 39.6474C19.5992 40.3388 19.6332 41.0192 19.6993 41.6852H15.2758C13.9701 39.7833 13.0266 37.3887 12.6022 34.7192C10.99 33.0402 10.0469 31.0094 10.0469 28.8212C10.0469 27.6175 10.3329 26.4619 10.858 25.3858C10.0435 23.9745 9.95746 22.4346 10.7821 21.4026C10.8461 21.3227 10.9144 21.2477 10.9863 21.1769C11.2485 21.8904 11.6989 22.6021 12.3153 23.2338C14.9157 20.3073 19.4978 18.3641 24.7175 18.3641C27.7821 18.3641 30.6271 19.0341 32.98 20.1796V20.1799L32.9442 20.2816L32.943 20.2856C32.9072 20.3918 32.8744 20.4999 32.8465 20.6095L32.8459 20.6114L32.8416 20.6291L32.8202 20.7176L32.8199 20.7198L32.8162 20.7354L32.8122 20.7531L32.8083 20.7712L32.8006 20.807L32.7969 20.8248L32.7954 20.8309L32.7932 20.8429L32.7896 20.8606L32.7825 20.8968L32.7792 20.9148L32.7758 20.9329L32.774 20.943L32.7727 20.951L32.7697 20.9693L32.7691 20.9718L32.7635 21.0055L32.7605 21.0238L32.7577 21.0419L32.7553 21.0563L32.7547 21.0603L32.7519 21.0783L32.7495 21.0967L32.7443 21.1335L32.7418 21.1518L32.7394 21.1702L32.7372 21.1886L32.7351 21.207L32.7329 21.2256L32.7308 21.244L32.7286 21.2624L32.7268 21.2811L32.7262 21.285L32.725 21.2994L32.7231 21.3181C32.7097 21.4614 32.7026 21.6063 32.7026 21.7529C32.7026 22.1378 32.7504 22.5111 32.8398 22.8682H34.3559C34.3139 22.625 34.2918 22.3748 34.2918 22.1198C34.2918 19.7038 36.2507 17.7449 38.6667 17.7449C39.0489 17.7449 39.4295 17.7951 39.7988 17.894L38.6667 22.1198V22.5932C41.0328 23.736 42.762 25.5567 43.3668 27.6904ZM24.2723 7.17967C27.2879 7.17967 29.7323 9.62417 29.7323 12.6397C29.7323 14.0407 29.2044 15.3182 28.3369 16.2846C27.1752 16.0191 25.9371 15.8752 24.6514 15.8752C23.1365 15.8752 21.6869 16.0748 20.3512 16.4386C19.3989 15.4557 18.8125 14.1163 18.8125 12.6397C18.8125 9.62417 21.257 7.17967 24.2723 7.17967ZM39.0807 25.7456C39.7262 25.7456 40.2495 26.2689 40.2495 26.9144C40.2495 27.5599 39.7262 28.083 39.0807 28.083C38.4352 28.083 37.9119 27.5599 37.9119 26.9144C37.9119 26.2689 38.4352 25.7456 39.0807 25.7456Z" fill="white" fill-rule="evenodd"></path></svg>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col product__preview">
-                    <a class="product__preview__wrapper" href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">
-                      <img alt="ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм" src="/media/products/images/c38ebf268e6a4e519b3a8c3bb7ee4551.catalog_large.webp">
-                    </a>
-                  </div>
-                  <div class="prod_tooltip2 econom_tooltip2">
-                    <span>
-                      <svg fill="none" height="22" viewBox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M21.3215 13.0772H23V15.1166C23 16.7863 18.1874 18.9276 16.4579 19.0992C16.2175 19.1496 15.9718 19.1902 15.7214 19.2208C15.6665 19.7029 15.6381 20.1972 15.6381 20.7007C15.6381 21.1416 15.66 21.5754 15.7022 22H12.8715C12.5028 21.4647 12.1791 20.868 11.9092 20.2222C11.1068 20.3807 10.2613 20.4655 9.3878 20.4655C8.24171 20.4655 7.14382 20.3194 6.12842 20.0523C6.11784 20.2667 6.11255 20.4828 6.11255 20.7007C6.11255 21.1416 6.1343 21.5754 6.17662 22H3.34598C2.51047 20.7874 1.90675 19.2607 1.63517 17.5586C0.603514 16.4881 0 15.1933 0 13.7982C0 13.0307 0.183014 12.2939 0.519062 11.6079C-0.00215561 10.708 -0.0572162 9.72619 0.470468 9.06825C0.51142 9.01729 0.555115 8.96946 0.601162 8.92436C0.768893 9.37926 1.05713 9.83299 1.45157 10.2358C3.11555 8.3699 6.04769 7.13094 9.3878 7.13094C11.3488 7.13094 13.1694 7.55811 14.675 8.28848V8.28868L14.6521 8.3535L14.6513 8.35604C14.6284 8.42378 14.6074 8.4927 14.5896 8.56259L14.5892 8.56377L14.5864 8.57509L14.5727 8.63151L14.5725 8.63288L14.5702 8.64284L14.5676 8.65416L14.5651 8.66568L14.5602 8.68852L14.5578 8.69984L14.5569 8.70375L14.5555 8.71136L14.5531 8.72269L14.5486 8.74572L14.5465 8.75724L14.5443 8.76876L14.5431 8.77521L14.5424 8.78028L14.5404 8.792L14.54 8.79356L14.5365 8.81503L14.5345 8.82675L14.5328 8.83827L14.5312 8.84744L14.5308 8.84998L14.529 8.8615L14.5275 8.87321L14.5241 8.89664L14.5226 8.90835L14.521 8.92007L14.5196 8.93178L14.5183 8.9435L14.5169 8.95541L14.5155 8.96712L14.5141 8.97884L14.513 8.99074L14.5126 8.99328L14.5118 9.00246L14.5106 9.01437C14.502 9.10574 14.4975 9.19808 14.4975 9.2916C14.4975 9.53701 14.5281 9.775 14.5853 10.0026H15.5554C15.5286 9.84763 15.5145 9.68812 15.5145 9.52549C15.5145 7.98509 16.7679 6.73618 18.3139 6.73618C18.5585 6.73618 18.802 6.76819 19.0384 6.83125L18.3139 9.52549V9.82732C19.828 10.5559 20.9345 11.7168 21.3215 13.0772ZM9.10289 0C11.0326 0 12.5968 1.55856 12.5968 3.48123C12.5968 4.37442 12.259 5.18894 11.7039 5.8051C10.9605 5.63583 10.1682 5.54407 9.34547 5.54407C8.37612 5.54407 7.44851 5.67137 6.59379 5.90331C5.9844 5.2766 5.60916 4.42265 5.60916 3.48123C5.60916 1.55856 7.1734 0 9.10289 0ZM18.5789 11.8373C18.9919 11.8373 19.3268 12.1709 19.3268 12.5825C19.3268 12.994 18.9919 13.3275 18.5789 13.3275C18.1658 13.3275 17.8309 12.994 17.8309 12.5825C17.8309 12.1709 18.1658 11.8373 18.5789 11.8373Z" fill="white" fill-rule="evenodd"></path></svg>
-                      Эконом
-                    </span>
+                    <div class="prod_tooltip2 econom_tooltip2">
+                      <span>
+                        <svg fill="none" height="22" viewBox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M21.3215 13.0772H23V15.1166C23 16.7863 18.1874 18.9276 16.4579 19.0992C16.2175 19.1496 15.9718 19.1902 15.7214 19.2208C15.6665 19.7029 15.6381 20.1972 15.6381 20.7007C15.6381 21.1416 15.66 21.5754 15.7022 22H12.8715C12.5028 21.4647 12.1791 20.868 11.9092 20.2222C11.1068 20.3807 10.2613 20.4655 9.3878 20.4655C8.24171 20.4655 7.14382 20.3194 6.12842 20.0523C6.11784 20.2667 6.11255 20.4828 6.11255 20.7007C6.11255 21.1416 6.1343 21.5754 6.17662 22H3.34598C2.51047 20.7874 1.90675 19.2607 1.63517 17.5586C0.603514 16.4881 0 15.1933 0 13.7982C0 13.0307 0.183014 12.2939 0.519062 11.6079C-0.00215561 10.708 -0.0572162 9.72619 0.470468 9.06825C0.51142 9.01729 0.555115 8.96946 0.601162 8.92436C0.768893 9.37926 1.05713 9.83299 1.45157 10.2358C3.11555 8.3699 6.04769 7.13094 9.3878 7.13094C11.3488 7.13094 13.1694 7.55811 14.675 8.28848V8.28868L14.6521 8.3535L14.6513 8.35604C14.6284 8.42378 14.6074 8.4927 14.5896 8.56259L14.5892 8.56377L14.5864 8.57509L14.5727 8.63151L14.5725 8.63288L14.5702 8.64284L14.5676 8.65416L14.5651 8.66568L14.5602 8.68852L14.5578 8.69984L14.5569 8.70375L14.5555 8.71136L14.5531 8.72269L14.5486 8.74572L14.5465 8.75724L14.5443 8.76876L14.5431 8.77521L14.5424 8.78028L14.5404 8.792L14.54 8.79356L14.5365 8.81503L14.5345 8.82675L14.5328 8.83827L14.5312 8.84744L14.5308 8.84998L14.529 8.8615L14.5275 8.87321L14.5241 8.89664L14.5226 8.90835L14.521 8.92007L14.5196 8.93178L14.5183 8.9435L14.5169 8.95541L14.5155 8.96712L14.5141 8.97884L14.513 8.99074L14.5126 8.99328L14.5118 9.00246L14.5106 9.01437C14.502 9.10574 14.4975 9.19808 14.4975 9.2916C14.4975 9.53701 14.5281 9.775 14.5853 10.0026H15.5554C15.5286 9.84763 15.5145 9.68812 15.5145 9.52549C15.5145 7.98509 16.7679 6.73618 18.3139 6.73618C18.5585 6.73618 18.802 6.76819 19.0384 6.83125L18.3139 9.52549V9.82732C19.828 10.5559 20.9345 11.7168 21.3215 13.0772ZM9.10289 0C11.0326 0 12.5968 1.55856 12.5968 3.48123C12.5968 4.37442 12.259 5.18894 11.7039 5.8051C10.9605 5.63583 10.1682 5.54407 9.34547 5.54407C8.37612 5.54407 7.44851 5.67137 6.59379 5.90331C5.9844 5.2766 5.60916 4.42265 5.60916 3.48123C5.60916 1.55856 7.1734 0 9.10289 0ZM18.5789 11.8373C18.9919 11.8373 19.3268 12.1709 19.3268 12.5825C19.3268 12.994 18.9919 13.3275 18.5789 13.3275C18.1658 13.3275 17.8309 12.994 17.8309 12.5825C17.8309 12.1709 18.1658 11.8373 18.5789 11.8373Z" fill="white" fill-rule="evenodd"></path></svg>
+                        Эконом
+                      </span>
+                    </div>
                   </div>
                 </div>
-
                 <div class="product__wrapper-remove">
                   <button type="button" class="btn btn-outline-crimson">
                     <span class="icon">
@@ -1342,11 +1341,369 @@
                         <path d="M16.2825 3.53473L15.2175 2.46973L9.75003 7.94473L4.28253 2.46973L3.21753 3.53473L8.69253 9.00223L3.21753 14.4697L4.28253 15.5347L9.75003 10.0597L15.2175 15.5347L16.2825 14.4697L10.8075 9.00223L16.2825 3.53473Z" />
                       </svg>
                     </span>
-
+  
                     Удалить
                   </button>
                 </div>
+
+                <ul class="detail-product">
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Бренд
+                    </div>
+
+                    <span>
+                      Kronospan
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Сорт
+                    </div>
+
+                    <span>
+                      II
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Предназначение
+                    </div>
+
+                    <span>
+                      Предназначена для обшивки стен, потолков, перегородок, в качестве настила под напольные покрытия, для опалубки, для изготовления тары и упаковки, а также в мебельном производстве.
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Класс
+                    </div>
+
+                    <span>
+                      -
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Коэффициент
+                    </div>
+
+                    <span>
+                      1.5
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Материал
+                    </div>
+
+                    <span>
+                      Берёза
+                    </span>
+                  </li>
+                </ul>
               </div>
+
+              <div>
+                <div class="product__wrapper product__wrapper__cols product__wrapper--removable" data-link-href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/" data-price="620.00" data-section-title="Продукты на главной">
+                  <div class="row">
+                    <div class="col product__info">
+                      <div class="prodname prodname__full" style="display: none;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="prodname prodname__truncated" style="display: block;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="infoprice">
+                        <div class="stock__wrapper">
+                          <div class="stock__wrapper">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            много
+                          </div>
+                        </div>
+                        <div class="ratio-list">
+                          <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/?scroll_to_reviews=true">Оставьте отзыв</a>
+                        </div>
+                        <p class="single_price">
+                          <span>625 р./шт</span>
+                        </p>
+                      </div>
+                      <div class="actualprice">
+                        <p class="product_page__price__wrapper">
+                          <span class="product_page__price__title">Цена через <br> интернет</span>
+                          <span class="product_page__price__amount">622<i>.50</i></span>
+                          <span class="product_page__price__tag">Р.</span>
+                        </p>
+                      </div>
+                      <div class="buy__wrapper">
+                        <a class="btn btn-primary btn_add_to_cart" data-count="1" data-price="622.5" data-product-id="3514" href="#">
+                          <img alt="" src="/static/assets/images/svg/cart-icon.svg">
+                          В корзину
+                        </a>
+                        <div class="row counter__wrapper">
+                          <div class="col-3">
+                            <a class="btn counter__minus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path></svg>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <input autocomplete="off" class="form-control" data-product-id="3514" data-single-price="622.5" maxlength="6" name="count" onkeypress="return validateNumsOnly(event);" type="text" value="1">
+                          </div>
+                          <div class="col-3">
+                            <a class="btn counter__plus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(11.75 23.75) rotate(-90)"></path></svg>
+                            </a>
+                          </div>
+                        </div>
+                        <a class="product__actions_btn" href="/customers/delivery_calculator/">
+                          <span class="icon">
+                            <svg fill="none" height="24" viewBox="0 0 31 24" width="31" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.91893V0H16.4902V19.027H0V8.91893Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(1 1)"></path><path d="M12.5098 12.4865H0V0H7.39216L12.5098 5.26173L12.5098 12.4865Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(17.4902 7.54053)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(20.3335 17.0537)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(5.54907 17.0537)"></path></svg>
+                          </span>
+                          <span class="caption">
+                            Доставка
+                          </span>
+                        </a>
+                        <div class="prod_tooltip econom_tooltip">
+                          <span class="">Эконом</span>
+                          <svg fill="none" height="54" viewBox="0 0 54 54" width="54" xmlns="http://www.w3.org/2000/svg"><path d="M27 52.5C41.0833 52.5 52.5 41.0833 52.5 27C52.5 12.9167 41.0833 1.5 27 1.5C12.9167 1.5 1.5 12.9167 1.5 27C1.5 41.0833 12.9167 52.5 27 52.5Z" fill="#C1C1C1" id="roundy2" stroke="white" stroke-width="3"></path><path clip-rule="evenodd" d="M43.3668 27.6904H45.9898V30.8891C45.9898 33.5078 38.4689 36.8663 35.7663 37.1355C35.3905 37.2145 35.0065 37.2782 34.6152 37.3263C34.5295 38.0823 34.4851 38.8576 34.4851 39.6474C34.4851 40.3388 34.5194 41.0192 34.5852 41.6852H30.1617C29.5854 40.8456 29.0795 39.9098 28.6578 38.8968C27.4039 39.1455 26.0826 39.2784 24.7175 39.2784C22.9265 39.2784 21.2108 39.0493 19.624 38.6304C19.6074 38.9667 19.5992 39.3056 19.5992 39.6474C19.5992 40.3388 19.6332 41.0192 19.6993 41.6852H15.2758C13.9701 39.7833 13.0266 37.3887 12.6022 34.7192C10.99 33.0402 10.0469 31.0094 10.0469 28.8212C10.0469 27.6175 10.3329 26.4619 10.858 25.3858C10.0435 23.9745 9.95746 22.4346 10.7821 21.4026C10.8461 21.3227 10.9144 21.2477 10.9863 21.1769C11.2485 21.8904 11.6989 22.6021 12.3153 23.2338C14.9157 20.3073 19.4978 18.3641 24.7175 18.3641C27.7821 18.3641 30.6271 19.0341 32.98 20.1796V20.1799L32.9442 20.2816L32.943 20.2856C32.9072 20.3918 32.8744 20.4999 32.8465 20.6095L32.8459 20.6114L32.8416 20.6291L32.8202 20.7176L32.8199 20.7198L32.8162 20.7354L32.8122 20.7531L32.8083 20.7712L32.8006 20.807L32.7969 20.8248L32.7954 20.8309L32.7932 20.8429L32.7896 20.8606L32.7825 20.8968L32.7792 20.9148L32.7758 20.9329L32.774 20.943L32.7727 20.951L32.7697 20.9693L32.7691 20.9718L32.7635 21.0055L32.7605 21.0238L32.7577 21.0419L32.7553 21.0563L32.7547 21.0603L32.7519 21.0783L32.7495 21.0967L32.7443 21.1335L32.7418 21.1518L32.7394 21.1702L32.7372 21.1886L32.7351 21.207L32.7329 21.2256L32.7308 21.244L32.7286 21.2624L32.7268 21.2811L32.7262 21.285L32.725 21.2994L32.7231 21.3181C32.7097 21.4614 32.7026 21.6063 32.7026 21.7529C32.7026 22.1378 32.7504 22.5111 32.8398 22.8682H34.3559C34.3139 22.625 34.2918 22.3748 34.2918 22.1198C34.2918 19.7038 36.2507 17.7449 38.6667 17.7449C39.0489 17.7449 39.4295 17.7951 39.7988 17.894L38.6667 22.1198V22.5932C41.0328 23.736 42.762 25.5567 43.3668 27.6904ZM24.2723 7.17967C27.2879 7.17967 29.7323 9.62417 29.7323 12.6397C29.7323 14.0407 29.2044 15.3182 28.3369 16.2846C27.1752 16.0191 25.9371 15.8752 24.6514 15.8752C23.1365 15.8752 21.6869 16.0748 20.3512 16.4386C19.3989 15.4557 18.8125 14.1163 18.8125 12.6397C18.8125 9.62417 21.257 7.17967 24.2723 7.17967ZM39.0807 25.7456C39.7262 25.7456 40.2495 26.2689 40.2495 26.9144C40.2495 27.5599 39.7262 28.083 39.0807 28.083C38.4352 28.083 37.9119 27.5599 37.9119 26.9144C37.9119 26.2689 38.4352 25.7456 39.0807 25.7456Z" fill="white" fill-rule="evenodd"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col product__preview">
+                      <a class="product__preview__wrapper" href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">
+                        <img alt="ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм" src="/media/products/images/c38ebf268e6a4e519b3a8c3bb7ee4551.catalog_large.webp">
+                      </a>
+                    </div>
+                    <div class="prod_tooltip2 econom_tooltip2">
+                      <span>
+                        <svg fill="none" height="22" viewBox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M21.3215 13.0772H23V15.1166C23 16.7863 18.1874 18.9276 16.4579 19.0992C16.2175 19.1496 15.9718 19.1902 15.7214 19.2208C15.6665 19.7029 15.6381 20.1972 15.6381 20.7007C15.6381 21.1416 15.66 21.5754 15.7022 22H12.8715C12.5028 21.4647 12.1791 20.868 11.9092 20.2222C11.1068 20.3807 10.2613 20.4655 9.3878 20.4655C8.24171 20.4655 7.14382 20.3194 6.12842 20.0523C6.11784 20.2667 6.11255 20.4828 6.11255 20.7007C6.11255 21.1416 6.1343 21.5754 6.17662 22H3.34598C2.51047 20.7874 1.90675 19.2607 1.63517 17.5586C0.603514 16.4881 0 15.1933 0 13.7982C0 13.0307 0.183014 12.2939 0.519062 11.6079C-0.00215561 10.708 -0.0572162 9.72619 0.470468 9.06825C0.51142 9.01729 0.555115 8.96946 0.601162 8.92436C0.768893 9.37926 1.05713 9.83299 1.45157 10.2358C3.11555 8.3699 6.04769 7.13094 9.3878 7.13094C11.3488 7.13094 13.1694 7.55811 14.675 8.28848V8.28868L14.6521 8.3535L14.6513 8.35604C14.6284 8.42378 14.6074 8.4927 14.5896 8.56259L14.5892 8.56377L14.5864 8.57509L14.5727 8.63151L14.5725 8.63288L14.5702 8.64284L14.5676 8.65416L14.5651 8.66568L14.5602 8.68852L14.5578 8.69984L14.5569 8.70375L14.5555 8.71136L14.5531 8.72269L14.5486 8.74572L14.5465 8.75724L14.5443 8.76876L14.5431 8.77521L14.5424 8.78028L14.5404 8.792L14.54 8.79356L14.5365 8.81503L14.5345 8.82675L14.5328 8.83827L14.5312 8.84744L14.5308 8.84998L14.529 8.8615L14.5275 8.87321L14.5241 8.89664L14.5226 8.90835L14.521 8.92007L14.5196 8.93178L14.5183 8.9435L14.5169 8.95541L14.5155 8.96712L14.5141 8.97884L14.513 8.99074L14.5126 8.99328L14.5118 9.00246L14.5106 9.01437C14.502 9.10574 14.4975 9.19808 14.4975 9.2916C14.4975 9.53701 14.5281 9.775 14.5853 10.0026H15.5554C15.5286 9.84763 15.5145 9.68812 15.5145 9.52549C15.5145 7.98509 16.7679 6.73618 18.3139 6.73618C18.5585 6.73618 18.802 6.76819 19.0384 6.83125L18.3139 9.52549V9.82732C19.828 10.5559 20.9345 11.7168 21.3215 13.0772ZM9.10289 0C11.0326 0 12.5968 1.55856 12.5968 3.48123C12.5968 4.37442 12.259 5.18894 11.7039 5.8051C10.9605 5.63583 10.1682 5.54407 9.34547 5.54407C8.37612 5.54407 7.44851 5.67137 6.59379 5.90331C5.9844 5.2766 5.60916 4.42265 5.60916 3.48123C5.60916 1.55856 7.1734 0 9.10289 0ZM18.5789 11.8373C18.9919 11.8373 19.3268 12.1709 19.3268 12.5825C19.3268 12.994 18.9919 13.3275 18.5789 13.3275C18.1658 13.3275 17.8309 12.994 17.8309 12.5825C17.8309 12.1709 18.1658 11.8373 18.5789 11.8373Z" fill="white" fill-rule="evenodd"></path></svg>
+                        Эконом
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__wrapper-remove">
+                  <button type="button" class="btn btn-outline-crimson">
+                    <span class="icon">
+                      <svg viewBox="0 0 19 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2825 3.53473L15.2175 2.46973L9.75003 7.94473L4.28253 2.46973L3.21753 3.53473L8.69253 9.00223L3.21753 14.4697L4.28253 15.5347L9.75003 10.0597L15.2175 15.5347L16.2825 14.4697L10.8075 9.00223L16.2825 3.53473Z" />
+                      </svg>
+                    </span>
+  
+                    Удалить
+                  </button>
+                </div>
+
+                <ul class="detail-product">
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Бренд
+                    </div>
+
+                    <span>
+                      Kronospan
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Сорт
+                    </div>
+
+                    <span>
+                      II
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Предназначение
+                    </div>
+
+                    <span>
+                      Предназначена для обшивки стен, потолков, перегородок, в качестве настила под напольные покрытия, для опалубки, для изготовления тары и упаковки, а также в мебельном производстве.
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Класс
+                    </div>
+
+                    <span>
+                      -
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Коэффициент
+                    </div>
+
+                    <span>
+                      1.5
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Материал
+                    </div>
+
+                    <span>
+                      Берёза
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="product__wrapper product__wrapper__cols product__wrapper--removable" data-link-href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/" data-price="620.00" data-section-title="Продукты на главной">
+                  <div class="row">
+                    <div class="col product__info">
+                      <div class="prodname prodname__full" style="display: none;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="prodname prodname__truncated" style="display: block;">
+                        <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм</a>
+                      </div>
+                      <div class="infoprice">
+                        <div class="stock__wrapper">
+                          <div class="stock__wrapper">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            <img alt="" src="/static/assets/images/svg/stock/green.svg">
+                            много
+                          </div>
+                        </div>
+                        <div class="ratio-list">
+                          <a href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/?scroll_to_reviews=true">Оставьте отзыв</a>
+                        </div>
+                        <p class="single_price">
+                          <span>625 р./шт</span>
+                        </p>
+                      </div>
+                      <div class="actualprice">
+                        <p class="product_page__price__wrapper">
+                          <span class="product_page__price__title">Цена через <br> интернет</span>
+                          <span class="product_page__price__amount">622<i>.50</i></span>
+                          <span class="product_page__price__tag">Р.</span>
+                        </p>
+                      </div>
+                      <div class="buy__wrapper">
+                        <a class="btn btn-primary btn_add_to_cart" data-count="1" data-price="622.5" data-product-id="3514" href="#">
+                          <img alt="" src="/static/assets/images/svg/cart-icon.svg">
+                          В корзину
+                        </a>
+                        <div class="row counter__wrapper">
+                          <div class="col-3">
+                            <a class="btn counter__minus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path></svg>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <input autocomplete="off" class="form-control" data-product-id="3514" data-single-price="622.5" maxlength="6" name="count" onkeypress="return validateNumsOnly(event);" type="text" value="1">
+                          </div>
+                          <div class="col-3">
+                            <a class="btn counter__plus" href="#">
+                              <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(0 12)"></path><path d="M0 0H23.5" stroke="#828282" stroke-width="2" transform="translate(11.75 23.75) rotate(-90)"></path></svg>
+                            </a>
+                          </div>
+                        </div>
+                        <a class="product__actions_btn" href="/customers/delivery_calculator/">
+                          <span class="icon">
+                            <svg fill="none" height="24" viewBox="0 0 31 24" width="31" xmlns="http://www.w3.org/2000/svg"><path d="M0 8.91893V0H16.4902V19.027H0V8.91893Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(1 1)"></path><path d="M12.5098 12.4865H0V0H7.39216L12.5098 5.26173L12.5098 12.4865Z" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(17.4902 7.54053)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(20.3335 17.0537)"></path><path d="M2.84314 5.94594C4.41336 5.94594 5.68628 4.6149 5.68628 2.97297C5.68628 1.33104 4.41336 0 2.84314 0C1.27292 0 0 1.33104 0 2.97297C0 4.6149 1.27292 5.94594 2.84314 5.94594Z" fill="#ffffff" stroke="#8F9090" stroke-linejoin="round" stroke-miterlimit="10" transform="translate(5.54907 17.0537)"></path></svg>
+                          </span>
+                          <span class="caption">
+                            Доставка
+                          </span>
+                        </a>
+                        <div class="prod_tooltip econom_tooltip">
+                          <span class="">Эконом</span>
+                          <svg fill="none" height="54" viewBox="0 0 54 54" width="54" xmlns="http://www.w3.org/2000/svg"><path d="M27 52.5C41.0833 52.5 52.5 41.0833 52.5 27C52.5 12.9167 41.0833 1.5 27 1.5C12.9167 1.5 1.5 12.9167 1.5 27C1.5 41.0833 12.9167 52.5 27 52.5Z" fill="#C1C1C1" id="roundy2" stroke="white" stroke-width="3"></path><path clip-rule="evenodd" d="M43.3668 27.6904H45.9898V30.8891C45.9898 33.5078 38.4689 36.8663 35.7663 37.1355C35.3905 37.2145 35.0065 37.2782 34.6152 37.3263C34.5295 38.0823 34.4851 38.8576 34.4851 39.6474C34.4851 40.3388 34.5194 41.0192 34.5852 41.6852H30.1617C29.5854 40.8456 29.0795 39.9098 28.6578 38.8968C27.4039 39.1455 26.0826 39.2784 24.7175 39.2784C22.9265 39.2784 21.2108 39.0493 19.624 38.6304C19.6074 38.9667 19.5992 39.3056 19.5992 39.6474C19.5992 40.3388 19.6332 41.0192 19.6993 41.6852H15.2758C13.9701 39.7833 13.0266 37.3887 12.6022 34.7192C10.99 33.0402 10.0469 31.0094 10.0469 28.8212C10.0469 27.6175 10.3329 26.4619 10.858 25.3858C10.0435 23.9745 9.95746 22.4346 10.7821 21.4026C10.8461 21.3227 10.9144 21.2477 10.9863 21.1769C11.2485 21.8904 11.6989 22.6021 12.3153 23.2338C14.9157 20.3073 19.4978 18.3641 24.7175 18.3641C27.7821 18.3641 30.6271 19.0341 32.98 20.1796V20.1799L32.9442 20.2816L32.943 20.2856C32.9072 20.3918 32.8744 20.4999 32.8465 20.6095L32.8459 20.6114L32.8416 20.6291L32.8202 20.7176L32.8199 20.7198L32.8162 20.7354L32.8122 20.7531L32.8083 20.7712L32.8006 20.807L32.7969 20.8248L32.7954 20.8309L32.7932 20.8429L32.7896 20.8606L32.7825 20.8968L32.7792 20.9148L32.7758 20.9329L32.774 20.943L32.7727 20.951L32.7697 20.9693L32.7691 20.9718L32.7635 21.0055L32.7605 21.0238L32.7577 21.0419L32.7553 21.0563L32.7547 21.0603L32.7519 21.0783L32.7495 21.0967L32.7443 21.1335L32.7418 21.1518L32.7394 21.1702L32.7372 21.1886L32.7351 21.207L32.7329 21.2256L32.7308 21.244L32.7286 21.2624L32.7268 21.2811L32.7262 21.285L32.725 21.2994L32.7231 21.3181C32.7097 21.4614 32.7026 21.6063 32.7026 21.7529C32.7026 22.1378 32.7504 22.5111 32.8398 22.8682H34.3559C34.3139 22.625 34.2918 22.3748 34.2918 22.1198C34.2918 19.7038 36.2507 17.7449 38.6667 17.7449C39.0489 17.7449 39.4295 17.7951 39.7988 17.894L38.6667 22.1198V22.5932C41.0328 23.736 42.762 25.5567 43.3668 27.6904ZM24.2723 7.17967C27.2879 7.17967 29.7323 9.62417 29.7323 12.6397C29.7323 14.0407 29.2044 15.3182 28.3369 16.2846C27.1752 16.0191 25.9371 15.8752 24.6514 15.8752C23.1365 15.8752 21.6869 16.0748 20.3512 16.4386C19.3989 15.4557 18.8125 14.1163 18.8125 12.6397C18.8125 9.62417 21.257 7.17967 24.2723 7.17967ZM39.0807 25.7456C39.7262 25.7456 40.2495 26.2689 40.2495 26.9144C40.2495 27.5599 39.7262 28.083 39.0807 28.083C38.4352 28.083 37.9119 27.5599 37.9119 26.9144C37.9119 26.2689 38.4352 25.7456 39.0807 25.7456Z" fill="white" fill-rule="evenodd"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col product__preview">
+                      <a class="product__preview__wrapper" href="/catalog/product/plity-osb-osp/osb-3-2500x1250x6-mm/">
+                        <img alt="ОСБ-ОСП (OSB-3) плита 2500x1250x6 мм" src="/media/products/images/c38ebf268e6a4e519b3a8c3bb7ee4551.catalog_large.webp">
+                      </a>
+                    </div>
+                    <div class="prod_tooltip2 econom_tooltip2">
+                      <span>
+                        <svg fill="none" height="22" viewBox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M21.3215 13.0772H23V15.1166C23 16.7863 18.1874 18.9276 16.4579 19.0992C16.2175 19.1496 15.9718 19.1902 15.7214 19.2208C15.6665 19.7029 15.6381 20.1972 15.6381 20.7007C15.6381 21.1416 15.66 21.5754 15.7022 22H12.8715C12.5028 21.4647 12.1791 20.868 11.9092 20.2222C11.1068 20.3807 10.2613 20.4655 9.3878 20.4655C8.24171 20.4655 7.14382 20.3194 6.12842 20.0523C6.11784 20.2667 6.11255 20.4828 6.11255 20.7007C6.11255 21.1416 6.1343 21.5754 6.17662 22H3.34598C2.51047 20.7874 1.90675 19.2607 1.63517 17.5586C0.603514 16.4881 0 15.1933 0 13.7982C0 13.0307 0.183014 12.2939 0.519062 11.6079C-0.00215561 10.708 -0.0572162 9.72619 0.470468 9.06825C0.51142 9.01729 0.555115 8.96946 0.601162 8.92436C0.768893 9.37926 1.05713 9.83299 1.45157 10.2358C3.11555 8.3699 6.04769 7.13094 9.3878 7.13094C11.3488 7.13094 13.1694 7.55811 14.675 8.28848V8.28868L14.6521 8.3535L14.6513 8.35604C14.6284 8.42378 14.6074 8.4927 14.5896 8.56259L14.5892 8.56377L14.5864 8.57509L14.5727 8.63151L14.5725 8.63288L14.5702 8.64284L14.5676 8.65416L14.5651 8.66568L14.5602 8.68852L14.5578 8.69984L14.5569 8.70375L14.5555 8.71136L14.5531 8.72269L14.5486 8.74572L14.5465 8.75724L14.5443 8.76876L14.5431 8.77521L14.5424 8.78028L14.5404 8.792L14.54 8.79356L14.5365 8.81503L14.5345 8.82675L14.5328 8.83827L14.5312 8.84744L14.5308 8.84998L14.529 8.8615L14.5275 8.87321L14.5241 8.89664L14.5226 8.90835L14.521 8.92007L14.5196 8.93178L14.5183 8.9435L14.5169 8.95541L14.5155 8.96712L14.5141 8.97884L14.513 8.99074L14.5126 8.99328L14.5118 9.00246L14.5106 9.01437C14.502 9.10574 14.4975 9.19808 14.4975 9.2916C14.4975 9.53701 14.5281 9.775 14.5853 10.0026H15.5554C15.5286 9.84763 15.5145 9.68812 15.5145 9.52549C15.5145 7.98509 16.7679 6.73618 18.3139 6.73618C18.5585 6.73618 18.802 6.76819 19.0384 6.83125L18.3139 9.52549V9.82732C19.828 10.5559 20.9345 11.7168 21.3215 13.0772ZM9.10289 0C11.0326 0 12.5968 1.55856 12.5968 3.48123C12.5968 4.37442 12.259 5.18894 11.7039 5.8051C10.9605 5.63583 10.1682 5.54407 9.34547 5.54407C8.37612 5.54407 7.44851 5.67137 6.59379 5.90331C5.9844 5.2766 5.60916 4.42265 5.60916 3.48123C5.60916 1.55856 7.1734 0 9.10289 0ZM18.5789 11.8373C18.9919 11.8373 19.3268 12.1709 19.3268 12.5825C19.3268 12.994 18.9919 13.3275 18.5789 13.3275C18.1658 13.3275 17.8309 12.994 17.8309 12.5825C17.8309 12.1709 18.1658 11.8373 18.5789 11.8373Z" fill="white" fill-rule="evenodd"></path></svg>
+                        Эконом
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__wrapper-remove">
+                  <button type="button" class="btn btn-outline-crimson">
+                    <span class="icon">
+                      <svg viewBox="0 0 19 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2825 3.53473L15.2175 2.46973L9.75003 7.94473L4.28253 2.46973L3.21753 3.53473L8.69253 9.00223L3.21753 14.4697L4.28253 15.5347L9.75003 10.0597L15.2175 15.5347L16.2825 14.4697L10.8075 9.00223L16.2825 3.53473Z" />
+                      </svg>
+                    </span>
+  
+                    Удалить
+                  </button>
+                </div>
+
+                <ul class="detail-product">
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Бренд
+                    </div>
+
+                    <span>
+                      Kronospan
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Сорт
+                    </div>
+
+                    <span>
+                      II
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Предназначение
+                    </div>
+
+                    <span>
+                      Предназначена для обшивки стен, потолков, перегородок, в качестве настила под напольные покрытия, для опалубки, для изготовления тары и упаковки, а также в мебельном производстве.
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title">
+                      Класс
+                    </div>
+
+                    <span>
+                      -
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Коэффициент
+                    </div>
+
+                    <span>
+                      1.5
+                    </span>
+                  </li>
+                  <li class="detail-product-item">
+                    <div class="detail-product-title no-point">
+                      Материал
+                    </div>
+
+                    <span>
+                      Берёза
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
               <div class="product__wrapper product__wrapper__cols product__wrapper--add">
                 <button class="btn btn-primary btn-add">
                   <span class="icon">
@@ -1357,75 +1714,6 @@
                 </button>
               </div>
             </div>
-
-            <ul class="detail-products">
-              <li class="detail-product">
-                <div class="detail-product-title">
-                  Бренд
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    Kronospan
-                  </li>
-                </ul>
-              </li>
-              <li class="detail-product">
-                <div class="detail-product-title no-point">
-                  Сорт
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    II
-                  </li>
-                </ul>
-              </li>
-              <li class="detail-product">
-                <div class="detail-product-title no-point">
-                  Предназначение
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    Предназначена для обшивки стен, потолков, перегородок, в качестве настила под напольные покрытия, для опалубки, для изготовления тары и упаковки, а также в мебельном производстве.
-                  </li>
-                </ul>
-              </li>
-              <li class="detail-product">
-                <div class="detail-product-title">
-                  Класс
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    -
-                  </li>
-                </ul>
-              </li>
-              <li class="detail-product">
-                <div class="detail-product-title no-point">
-                  Коэффициент
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    1.5
-                  </li>
-                </ul>
-              </li>
-              <li class="detail-product">
-                <div class="detail-product-title no-point">
-                  Материал
-                </div>
-
-                <ul class="detail-product-info">
-                  <li class="detail-product-info-item">
-                    Берёза
-                  </li>
-                </ul>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

@@ -1,12 +1,17 @@
-.pagination {
+.owl-pagination--compare {
+	display: flex;
+	align-items: center;
 
-	&-prev,
-	&-next {
+	.prev,
+	.next {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 6px;
+		background-color: transparent;
 		color: #a0a0a0;
+		border: none;
+		cursor: pointer;
 		transition-property: color, background, border;
 		transition-duration: 200ms;
 		transition-timing-function: ease-in-out;
@@ -30,6 +35,12 @@
 			}
 		}
 
+		&[disabled],
+		&[inert] {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
 		.icon {
 			flex-shrink: 0;
 
@@ -50,7 +61,7 @@
 		}
 	}
 
-	&-current {
+	.counter {
 		line-height: 1.5;
 		color: #000;
 		align-self: center;
