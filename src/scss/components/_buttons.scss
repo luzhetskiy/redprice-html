@@ -144,6 +144,42 @@
 	}
 }
 
+.btn-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #7f7f7f;
+	background-color: transparent;
+	border: 1px solid #E0E0E0;
+	padding: 0;
+
+	.icon {
+		--_icon-size: 20px;
+
+		svg {
+
+			&,
+			* {
+				transition: none;
+			}
+		}
+	}
+
+	&:is(:active, .active) {
+		color: #000;
+		background-color: transparent;
+		border-color: #E0E0E0;
+	}
+
+	@media (hover: hover) {
+		&:is(:hover, :focus-visible) {
+			color: #000;
+			background-color: transparent;
+			border-color: #E0E0E0;
+		}
+	}
+}
+
 .buttons-filter {
 	
 	@media (min-width: 992px) {

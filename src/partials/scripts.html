@@ -9,10 +9,12 @@
 	(function (t, i, n, e) {
 		"use strict"
 		var r, o, s, a, l, h, c, p, u, d, f, A, m, w, g, y, b, v, x, C, S, E, M, k, H, D, F, T = [].indexOf || function (t) {
-			for (var i = 0, n = this.length n > i i++)
-				if (i in this && this[i] === t)
+			for (var i = 0, n = this.length; n > i; i++) {
+				if (i in this && this[i] === t) {
 					return i
-			return -1
+				}
+				return -1
+			}
 		}
 
 		S = "notify",
@@ -292,7 +294,7 @@
 							w(l, "left", u.left - Q.left),
 							U = ["top", "left"],
 							B = 0,
-							N = U.length N > B B++)
+							N = U.length; N > B; B++)
 							H = U[B],
 								g = parseInt(this.elem.css("margin-" + H), 10),
 								g && w(l, H, g)
@@ -303,7 +305,7 @@
 								i = n.extend({}, l),
 								t = this.userContainer.css("border-color") || this.userContainer.css("background-color") || "white",
 								R = 0,
-								P = b.length P > R R++)
+								P = b.length; P > R; R++)
 								H = b[R],
 									D = M[H],
 									H !== y && (o = D === A ? t : "transparent",
@@ -2286,7 +2288,7 @@
 	})
 	$(document).ready(function () {
 		var noselects = document.getElementsByClassName("noselect")
-		for (let i = 0 i < noselects.length ++i) {
+		for (let i = 0; i < noselects.length; ++i) {
 			noselects[i].ondragstart = noselect
 			noselects[i].onselectstart = noselect
 			noselects[i].oncontextmenu = noselect
@@ -2318,7 +2320,7 @@
 		(function (t, i, n, e) {
 			"use strict"
 			var r, o, s, a, l, h, c, p, u, d, f, A, m, w, g, y, b, v, x, C, S, E, M, k, H, D, F, T = [].indexOf || function (t) {
-				for (var i = 0, n = this.length n > i i++)
+				for (var i = 0, n = this.length; n > i; i++)
 					if (i in this && this[i] === t)
 						return i
 				return -1
@@ -2601,7 +2603,7 @@
 								w(l, "left", u.left - Q.left),
 								U = ["top", "left"],
 								B = 0,
-								N = U.length N > B B++)
+								N = U.length; N > B; B++)
 								H = U[B],
 									g = parseInt(this.elem.css("margin-" + H), 10),
 									g && w(l, H, g)
@@ -2612,7 +2614,7 @@
 									i = n.extend({}, l),
 									t = this.userContainer.css("border-color") || this.userContainer.css("background-color") || "white",
 									R = 0,
-									P = b.length P > R R++)
+									P = b.length; P > R; R++)
 									H = b[R],
 										D = M[H],
 										H !== y && (o = D === A ? t : "transparent",
@@ -3723,40 +3725,49 @@
 										done: !0
 									}
 								}
-								for (i.method = r,
-									i.arg = o ) {
+
+								while (true) {
+									i.method = r
+									i.arg = o
 									var s = i.delegate
+
 									if (s) {
-										var l = j(s, i)
-										if (l) {
-											if (l === y)
-												continue
-											return l
-										}
+											var l = j(s, i)
+											if (l) {
+													if (l === y) continue
+													return l
+											}
 									}
-									if ("next" === i.method)
-										i.sent = i._sent = i.arg
-									else if ("throw" === i.method) {
-										if (a === h)
-											throw a = g,
-											i.arg
-										i.dispatchException(i.arg)
-									} else
-										"return" === i.method && i.abrupt("return", i.arg)
+
+									if (i.method === "next") {
+											i.sent = i._sent = i.arg
+									} else if (i.method === "throw") {
+											if (a === h) {
+													a = g
+													throw i.arg
+											}
+											i.dispatchException(i.arg)
+									} else if (i.method === "return") {
+											i.abrupt("return", i.arg)
+									}
+
 									a = v
 									var c = d(t, n, i)
-									if ("normal" === c.type) {
-										if (a = i.done ? g : m,
-											c.arg === y)
-											continue
-										return {
-											value: c.arg,
-											done: i.done
-										}
+
+									if (c.type === "normal") {
+											a = i.done ? g : m
+											if (c.arg === y) continue
+											return {
+													value: c.arg,
+													done: i.done
+											}
 									}
-									"throw" === c.type && (a = g,
-										i.method = "throw",
-										i.arg = c.arg)
+
+									if (c.type === "throw") {
+											a = g
+											i.method = "throw"
+											i.arg = c.arg
+									}
 								}
 							}
 						}
@@ -8471,6 +8482,7 @@
 <script src="https://red-price63.ru/static/marketplace/marketplace_base.js?v4"></script>
 <!-- (End) Скрипты с сайта -->
 
+<!-- (Start) Мои скрипты -->
 <script>
 	$(document).ready(function () {
 		const $carousel = $(".owl-carousel--compare")
@@ -8536,3 +8548,4 @@
 		})
 	})
 </script>
+<!-- (End) Мои скрипты -->
