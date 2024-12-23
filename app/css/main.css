@@ -473,6 +473,9 @@
   max-width: 100%;
   margin: 0;
 }
+.owl-carousel--compare .product__wrapper.product__wrapper__cols .stock__wrapper img {
+  display: inline;
+}
 
 .favorite-filter {
   display: none;

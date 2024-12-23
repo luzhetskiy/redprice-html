@@ -34,5 +34,9 @@
 	.product__wrapper.product__wrapper__cols {
 		max-width: 100%;
 		margin: 0;
+
+		.stock__wrapper img {
+			display: inline;
+		}
 	}
 }
