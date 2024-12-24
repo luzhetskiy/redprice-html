@@ -30,6 +30,16 @@
 
 		&__bag {
 			color: #828282;
+
+			svg {
+				width: 20px;
+				height: 18px;
+
+				@media (min-width: 768px) {
+					width: 21px;
+					height: 19px;
+				}
+			}
 		}
 
 		.custom_checkbox {
@@ -74,15 +84,23 @@
 	
 				&:nth-child(2),
 				&:nth-child(4) {
-					width: 60px;
-					max-width: 60px;
-					flex-basis: 60px;
+					width: 75px;
+					max-width: 75px;
+					flex-basis: 75px;
 					text-align: start;
 
-					@media (min-width: 992px) {
+					@media (min-width: 768px) {
 						width: 85px;
 						max-width: 85px;
 						flex-basis: 85px;
+					}
+				}
+
+				&:nth-child(2) {
+					margin-right: 10px;
+
+					@media (min-width: 768px) {
+						margin-right: 0;
 					}
 				}
 
@@ -113,6 +131,15 @@
 
 				&:nth-child(3) {
 					display: block !important;
+					text-align: start;
+				}
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					
+					@media (max-width: 576px) {
+						display: none;
+					}
 				}
 	
 				&:nth-child(6) {
@@ -131,9 +158,9 @@
 				&:nth-child(4),
 				&:nth-child(5) {
 					@media (max-width: 576px) {
-						max-width: calc(100% - 100px);
-						width: calc(100% - 100px);
-						flex-basis: calc(100% - 100px);
+						max-width: calc(100% - 125px);
+						width: calc(100% - 125px);
+						flex-basis: calc(100% - 125px);
 						text-align: start;
 					}
 				}
@@ -177,8 +204,9 @@
 					@media (max-width: 576px) {
 						max-width: 90px;
 						width: 90px;
+						flex-direction: row-reverse;
 						flex-basis: 90px;
-						justify-content: flex-start;
+						justify-content: flex-end;
 						gap: 10px;
 						order: 7;
 						position: absolute;
@@ -260,9 +288,18 @@
 			.btn-plaintext {
 				font-size: 14px;
 				padding: 0;
+				color: #000;
+
+				@media (min-width: 768px) {
+					color: #828282;
+				}
 
 				.icon {
-					--_icon-color: inherit;
+					--_icon-color: #828282;
+
+					@media (min-width: 768px) {
+						--_icon-color: inherit;
+					}
 
 					transition: color 300ms ease-in-out;
 				}
@@ -292,19 +329,40 @@
 				}
 			}
 
+			.custom_checkbox {
+				width: initial;
+				display: flex;
+				align-items: center;
+
+				span {
+					padding: 0;
+				}
+			}
+
+			.btn-plaintext {
+				gap: 10px;
+
+				@media (min-width: 768px) {
+					gap: 5px;
+				}
+
+				.icon {
+					--_icon-size: 18px;
+
+					@media (min-width: 768px) {
+						--_icon-size: 20px;
+					}
+				}
+			}
+
 			.btn-bag {
 
 				.icon {
 					--_icon-size: 24px;
-				}
-			}
 
-			.custom_checkbox {
-				width: initial;
-				color: #828282;
-
-				span {
-					padding: 0;
+					@media (min-width: 768px) {
+						--_icon-size: 20px;
+					}
 				}
 			}
 		}
@@ -315,7 +373,7 @@
 			min-height: 48px;
 			font-size: 16px;
 
-			@media (min-width: 992px) {
+			@media (min-width: 768px) {
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -324,6 +382,15 @@
 
 			.icon {
 				--_icon-size: 24px;
+			}
+		}
+
+		.btn-link {
+			color: #ff161f;
+
+			&:hover {
+				color: #CB0008;
+				text-decoration: none;
 			}
 		}
 	}
