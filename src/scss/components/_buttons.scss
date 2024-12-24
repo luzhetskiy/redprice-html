@@ -51,6 +51,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	background-color: #fff;
 	border: 2px solid #ff161f;
 	transition-property: color, background, border;
 	transition-duration: 200ms;
@@ -184,6 +185,18 @@
 	
 	@media (min-width: 992px) {
 		max-width: 740px;
+	}
+
+	@media (max-width: 992px) {
+		margin-inline: -15px;
+		padding-inline: 15px;
+		mask-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0) 0px,
+			rgba(0, 0, 0, 1) 20px,
+			rgba(0, 0, 0, 1) calc(100% - 20px),
+			rgba(0, 0, 0, 0) 100%
+		);
 	}
 
 	&,

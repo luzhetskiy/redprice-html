@@ -8527,7 +8527,7 @@
 			responsive: {
 				0: {
 					items: 2,
-					margin: 10,
+					margin: 24,
 				},
 				992: {
 					items: 4,
@@ -8546,6 +8546,74 @@
 		$next.on("click", function () {
 			$carousel.trigger("next.owl.carousel")
 		})
+
+		const allProducts = document.querySelectorAll('.detail-product')
+
+		function setEqualHeights() {
+			const allProducts = document.querySelectorAll('.detail-product')
+
+			// Сбрасываем высоты перед пересчётом
+			allProducts.forEach(product =>
+				Array.from(product.children).forEach(item => (item.style.minHeight = ''))
+			)
+
+			const maxItems = Math.max(...Array.from(allProducts).map(product => product.children.length))
+
+			// Пройдём по каждому индексу
+			for (let i = 0; i < maxItems; i++) {
+				const heights = []
+
+				// Собираем высоты всех элементов с текущим индексом
+				allProducts.forEach(product => {
+					const item = product.children[i]
+					if (item) heights.push(item.offsetHeight)
+				})
+
+				// Определяем максимальную высоту
+				const maxHeight = Math.max(...heights)
+
+				// Устанавливаем максимальную высоту для всех элементов с этим индексом
+				allProducts.forEach(product => {
+					const item = product.children[i]
+					if (item) item.style.minHeight = `${maxHeight}px`
+				})
+			}
+		}
+
+		const throttle = (func, delay = 250) => {
+			let isThrottled = false;
+			let savedArgs = null;
+			let savedThis = null;
+
+			return function wrap(...args) {
+				if (isThrottled) {
+					savedArgs = args,
+					savedThis = this;
+					return;
+				}
+
+				func.apply(this, args);
+				isThrottled = true;
+
+				setTimeout(() => {
+					isThrottled = false;
+
+					if (savedThis) {
+						wrap.apply(savedThis, savedArgs);
+						savedThis = null;
+						savedArgs = null;
+					}
+
+				}, delay);
+			}
+		};
+
+		// Добавляем обработчик события resize
+		window.addEventListener('resize', throttle(setEqualHeights))
+
+		// Инициализация при загрузке
+		setEqualHeights()
+
 	})
 </script>
 <!-- (End) Мои скрипты -->

@@ -31,12 +31,36 @@
 		padding-inline: 15px;
 	}
 
+	.owl-item {
+
+		&:not(:first-child) {
+
+			.detail-product-title {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+
 	.product__wrapper.product__wrapper__cols {
 		max-width: 100%;
 		margin: 0;
 
-		.stock__wrapper img {
-			display: inline;
+		.stock__wrapper {
+
+			img {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.owl-pagination--compare {
+
+	.icon {
+		@media (min-width: 992px) {
+			--_icon-size: 20px;
 		}
 	}
 }

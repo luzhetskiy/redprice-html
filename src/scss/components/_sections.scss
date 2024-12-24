@@ -8,12 +8,16 @@
 			margin-bottom: 20px;
 		}
 
+		h1,
+		.section-title {
+			margin: 0;
+		}
+
 		.section-title {
 			font-size: 22px;
 			font-weight: 700;
 			line-height: 1.2;
 			color: #000;
-			margin: 0;
 
 			@media (min-width: 992px) {
 				font-size: 34px;
