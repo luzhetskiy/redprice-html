@@ -1216,27 +1216,6 @@
 		}
 		event.preventDefault()
 	})
-	$(document).on('click touchend', '.custom_checkbox span', function (event) {
-		event.preventDefault()
-		var self = $(this).parent('.custom_checkbox')
-		var checkbox = $('.custom_checkbox input')
-		if (!self.hasClass('custom_checkbox__checked')) {
-			self.addClass('custom_checkbox__checked')
-			checkbox.attr('checked', 'checked')
-			$(this).find('svg').show()
-		} else {
-			self.removeClass('custom_checkbox__checked')
-			checkbox.removeAttr('checked')
-			$(this).find('svg').hide()
-		}
-	})
-	$(document).ready(function (event) {
-		$('.custom_checkbox input').each(function (index, element) {
-			if ($(element).attr('checked') == true || $(element).attr('checked') == 'checked') {
-				$(element).parents('.custom_checkbox').addClass('custom_checkbox__checked')
-			}
-		})
-	})
 	$(document).on('click', '.rubrics__wrapper__interactive .rubrics_headline', function (event) {
 		var headline = $(this)
 		var menu = headline.parents('.rubrics__wrapper__interactive:first').find('> ul:first')
@@ -8480,6 +8459,29 @@
 
 </script>
 <script src="https://red-price63.ru/static/marketplace/marketplace_base.js?v4"></script>
+<script>
+	$(document).on('click touchend', '.custom_checkbox span', function (event) {
+		event.preventDefault()
+		var self = $(this).parent('.custom_checkbox')
+		var checkbox = $('.custom_checkbox input')
+		if (!self.hasClass('custom_checkbox__checked')) {
+			self.addClass('custom_checkbox__checked')
+			checkbox.attr('checked', 'checked')
+			$(this).find('svg').show()
+		} else {
+			self.removeClass('custom_checkbox__checked')
+			checkbox.removeAttr('checked')
+			$(this).find('svg').hide()
+		}
+	})
+	$(document).ready(function (event) {
+		$('.custom_checkbox input').each(function (index, element) {
+			if ($(element).attr('checked') == true || $(element).attr('checked') == 'checked') {
+				$(element).parents('.custom_checkbox').addClass('custom_checkbox__checked')
+			}
+		})
+	})
+</script>
 <!-- (End) Скрипты с сайта -->
 
 <!-- (Start) Мои скрипты -->
