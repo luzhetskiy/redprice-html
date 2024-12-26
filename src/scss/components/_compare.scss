@@ -1,4 +1,12 @@
 .compare {
+
+	h1 {
+		margin-block: 0 15px;
+
+		@media (min-width: 992px) {
+			margin-block: 0 15px;
+		}
+	}
 	
 	.rubrics__mobile__wrapper {
 
@@ -36,10 +44,21 @@
 		&:not(:first-child) {
 
 			.detail-product-title {
-				opacity: 0;
-				visibility: hidden;
+
+				@media (min-width: 992px) {
+					opacity: 0;
+					visibility: hidden;
+				}
 			}
 		}
+
+		// &:nth-child(2n + 2) {
+
+		// 	.detail-product-title {
+		// 		opacity: 0;
+		// 		visibility: hidden;
+		// 	}
+		// }
 	}
 
 	.product__wrapper.product__wrapper__cols {

@@ -338,7 +338,7 @@
               </div>
               <div class="col">
                 <p>
-                  <span class="cart_product__element__total">379.00</span>
+                  <span class="cart_product__element__total">379.00 <span class="d-sm-none">₽</span></span>
                 </p>
               </div>
               <div class="col">
@@ -4325,41 +4325,41 @@
 									var s = i.delegate
 
 									if (s) {
-											var l = j(s, i)
-											if (l) {
-													if (l === y) continue
-													return l
-											}
+										var l = j(s, i)
+										if (l) {
+											if (l === y) continue
+											return l
+										}
 									}
 
 									if (i.method === "next") {
-											i.sent = i._sent = i.arg
+										i.sent = i._sent = i.arg
 									} else if (i.method === "throw") {
-											if (a === h) {
-													a = g
-													throw i.arg
-											}
-											i.dispatchException(i.arg)
+										if (a === h) {
+											a = g
+											throw i.arg
+										}
+										i.dispatchException(i.arg)
 									} else if (i.method === "return") {
-											i.abrupt("return", i.arg)
+										i.abrupt("return", i.arg)
 									}
 
 									a = v
 									var c = d(t, n, i)
 
 									if (c.type === "normal") {
-											a = i.done ? g : m
-											if (c.arg === y) continue
-											return {
-													value: c.arg,
-													done: i.done
-											}
+										a = i.done ? g : m
+										if (c.arg === y) continue
+										return {
+											value: c.arg,
+											done: i.done
+										}
 									}
 
 									if (c.type === "throw") {
-											a = g
-											i.method = "throw"
-											i.arg = c.arg
+										a = g
+										i.method = "throw"
+										i.arg = c.arg
 									}
 								}
 							}
@@ -9120,17 +9120,17 @@
 
 			// Проверяем, первый ли это слайд
 			if (event.item.index === 0) { // Начало слайдера
-					$prev.prop("disabled", true).attr("inert", "")
+				$prev.prop("disabled", true).attr("inert", "")
 			} else {
-					$prev.prop("disabled", false).removeAttr("inert")
+				$prev.prop("disabled", false).removeAttr("inert")
 			}
 
 			// Проверяем, последний ли это слайд
 			const isLastPage = event.item.index + itemsPerPage >= totalItems
 			if (isLastPage) { // Конец слайдера
-					$next.prop("disabled", true).attr("inert", "")
+				$next.prop("disabled", true).attr("inert", "")
 			} else {
-					$next.prop("disabled", false).removeAttr("inert")
+				$next.prop("disabled", false).removeAttr("inert")
 			}
 		}
 
@@ -9143,7 +9143,7 @@
 			responsive: {
 				0: {
 					items: 2,
-					margin: 24,
+					margin: 28,
 				},
 				992: {
 					items: 4,
@@ -9204,7 +9204,7 @@
 			return function wrap(...args) {
 				if (isThrottled) {
 					savedArgs = args,
-					savedThis = this;
+						savedThis = this;
 					return;
 				}
 
@@ -9225,7 +9225,9 @@
 		};
 
 		// Добавляем обработчик события resize
-		window.addEventListener('resize', throttle(setEqualHeights))
+		window.addEventListener('resize', throttle(() => {
+			setTimeout(setEqualHeights, 250)
+		}))
 
 		// Инициализация при загрузке
 		setEqualHeights()
