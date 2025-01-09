@@ -10238,6 +10238,52 @@
 		})
 	})
 </script>
+
+<script>
+	$(document).ready(function () {
+		const $carouselContainer = $(".owl-carousel--catalog")
+
+		if (!$carouselContainer.length) return
+
+
+		const $carousel = $carouselContainer.find(".owl-carousel")
+		const $navigation = $carouselContainer.find(".owl-carousel-navigation")
+
+		$carousel.owlCarousel({
+			items: 4,
+			margin: 20,
+			nav: true,
+			dots: true,
+			navContainer: $navigation,
+			navText: [
+				'<button type="button" role="presentation" class="owl-prev"><span class="icon"> <svg viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5263 20.4737L5 11L15.5263 1.52632" stroke="currentColor" stroke-width="1.73913"></path></svg></span></button>', 
+				'<button type="button" role="presentation" class="owl-next"><span class="icon"><svg viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.47368 20.4737L15 11L4.47369 1.52632" stroke="currentColor" stroke-width="1.73913"></path></svg></span></button>'
+			],
+			responsive: {
+				0: {
+					items: 2,
+					margin: 8,
+				},
+				576: {
+					items: 3,
+					margin: 12,
+				},
+				768: {
+					items: 2,
+					margin: 12,
+				},
+				992: {
+					items: 3,
+					margin: 16,
+				},
+				1200: {
+					items: 4,
+					margin: 20,
+				}
+			}
+		})
+	})
+</script>
 <!-- (End) Мои скрипты -->
 </body>
 
