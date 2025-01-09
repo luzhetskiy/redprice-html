@@ -179,12 +179,14 @@
 
 .product-card__buttons {
 	width: 100%;
-	max-width: 216px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px;
-	margin-top: 20px;
+
+	@media (min-width: 768.98px) {
+		max-width: 216px;
+	}
 
 	.btn {
 		min-height: 50px;
@@ -245,6 +247,14 @@
 	&:is(:hover, :active, .active) {
 		color: #828282;
 		border: 2px solid #bdbdbd;
+	}
+}
+
+.counter__wrapper {
+	max-height: 50px;
+
+	a {
+		padding: 10px 5px;
 	}
 }
 

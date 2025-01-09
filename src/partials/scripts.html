@@ -604,40 +604,6 @@
 			contentBlock.appendChild(bottomBlock)
 		}
 	}
-	function moveBtnsToLeft() {
-		if (!document.querySelector(".product-card__left > .product-card__btns")) {
-			var btnsBlock = document.querySelector(".product-card__btns")
-			var leftBlock = document.querySelector(".product-card__left")
-			leftBlock.appendChild(btnsBlock)
-		}
-	}
-	function moveBtnsToContent() {
-		if (!document.querySelector(".product-card__content > .product-card__btns")) {
-			var btnsBlock = document.querySelector(".product-card__btns")
-			var contentBlock = document.querySelector(".product-card__content")
-			contentBlock.appendChild(btnsBlock)
-		}
-	}
-	$(document).ready(function () {
-		function handleResize() {
-			var width = window.innerWidth
-			if (width < 566) {
-				console.log('< 566')
-				moveBottomToContent()
-				moveBtnsToContent()
-				return
-			}
-			if (width < 768) {
-				moveBottomToRight()
-				moveBtnsToLeft()
-				return
-			}
-			moveBottomToPrice()
-			moveBtnsToLeft()
-		}
-		handleResize()
-		window.addEventListener("resize", handleResize)
-	})
 	Number.isInteger = Number.isInteger || function (value) {
 		return typeof value === 'number' && isFinite(value) && Math.floor(value) === value
 	}
@@ -3170,19 +3136,6 @@
 
 </script>
 <script>
-	"use strict"
-	let mobileMenu = false
-	function openMobileMenu() {
-		let boxMenu = document.getElementById("mobile-menu")
-		let cityMenu = $(boxMenu).find('.mobile-menu_city-nav')
-		if (mobileMenu == false) {
-			boxMenu.style.transform = "translate(100vw,0)"
-			mobileMenu = true
-		} else {
-			boxMenu.style.transform = "translate(0,0)"
-			mobileMenu = false
-		}
-	}
 	"use strict"
 	$(document).ready(function () {
 		toggle()
@@ -8378,6 +8331,19 @@
 </script>
 <script src="https://red-price63.ru/static/marketplace/marketplace_base.js?v4"></script>
 <script>
+	let mobileMenu = false
+	function openMobileMenu() {
+		let boxMenu = document.getElementById("mobile-menu")
+		let cityMenu = $(boxMenu).find('.mobile-menu_city-nav')
+		if (mobileMenu == false) {
+			boxMenu.style.transform = "translate(100vw,0)"
+			mobileMenu = true
+		} else {
+			boxMenu.style.transform = "translate(0,0)"
+			mobileMenu = false
+		}
+	}
+
 	function responsiveProductCols() {
 		var ww = $(window).width()
 		if ((ww <= 1180) && (ww >= 768)) {
@@ -8481,6 +8447,41 @@
 			$('.footer .footer__wrapper .footer_catalog').show()
 			$('.price_list_button_wrapper').hide()
 		}
+	})
+	
+	function moveBtnsToLeft() {
+		if (!document.querySelector(".product-card__left > .product-card__btns")) {
+			var btnsBlock = document.querySelector(".product-card__btns")
+			var leftBlock = document.querySelector(".product-card__left")
+			leftBlock.appendChild(btnsBlock)
+		}
+	}
+	function moveBtnsToContent() {
+		if (!document.querySelector(".product-card__content > .product-card__btns")) {
+			var btnsBlock = document.querySelector(".product-card__btns")
+			var contentBlock = document.querySelector(".product-card__content")
+			contentBlock.appendChild(btnsBlock)
+		}
+	}
+	$(document).ready(function () {
+		function handleResize() {
+			var width = window.innerWidth
+			if (width < 566) {
+				console.log('< 566')
+				moveBottomToContent()
+				moveBtnsToContent()
+				return
+			}
+			if (width < 768) {
+				moveBottomToRight()
+				moveBtnsToLeft()
+				return
+			}
+			moveBottomToPrice()
+			moveBtnsToLeft()
+		}
+		handleResize()
+		window.addEventListener("resize", handleResize)
 	})
 </script>
 <!-- (End) Скрипты с сайта -->

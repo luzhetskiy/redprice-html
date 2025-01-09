@@ -1,0 +1,20 @@
+.mobile-menu {
+
+	@media (max-width: 824px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&_title {
+
+		@media (max-width: 824px) {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+		}
+	}
+
+	&_menu-nav--bottom {
+		margin-top: auto;
+	}
+}
