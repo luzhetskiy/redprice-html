@@ -1479,6 +1479,10 @@
   transition: none;
 }
 
+.stock__wrapper img {
+  margin-right: 0;
+}
+
 .cart_page__wrapper {
   margin-top: 60px;
 }
