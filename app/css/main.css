@@ -1229,6 +1229,11 @@
 
 .product-card__favorite:is(:active, .active) {
   background-color: #FF161F;
+  border-color: #FF161F;
+}
+
+.product-card__favorite:is(:active, .active) .icon {
+  fill: #fff;
 }
 
 .product-card__compare {
@@ -1242,6 +1247,11 @@
 
 .product-card__compare:is(:active, .active) {
   background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+
+.product-card__compare:is(:active, .active) .icon {
+  fill: #fff;
 }
 
 .product-card--order .product-card__price-title-gray,
