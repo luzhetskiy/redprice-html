@@ -1233,7 +1233,7 @@
 }
 
 .product-card__favorite:is(:active, .active) .icon {
-  fill: #fff;
+  --_icon-color: #fff;
 }
 
 .product-card__compare {
@@ -1251,7 +1251,7 @@
 }
 
 .product-card__compare:is(:active, .active) .icon {
-  fill: #fff;
+  --_icon-color: #fff;
 }
 
 .product-card--order .product-card__price-title-gray,
