@@ -27330,10 +27330,6 @@ a.mainpage_catalog__headline._active svg {
   text-decoration: none !important;
 }
 
-.product__info .product_page__price__wrapper {
-  left: auto !important;
-}
-
 .product__wrapper .buy__wrapper .btn_add_to_cart {
   margin: 0 65px 0 0;
 }
@@ -27387,8 +27383,41 @@ a.mainpage_catalog__headline._active svg {
 }
 
 .product_page__price__wrapper {
-  display: inline-block;
+  display: block;
   margin: 0;
+}
+
+.product_page__price__title {
+  font-size: 10px;
+  line-height: 11px;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  margin: 0px;
+}
+
+.product_page__price__amount {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 900;
+  font-family: Stolzl;
+}
+
+.product_page__price__amount i {
+  vertical-align: super;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.product__wrapper.product__wrapper__cols .product_page__price__tag {
+  width: 19px;
+  height: 19px;
+  font-size: 12px;
+  line-height: 17px;
+  top: 3px;
+  left: 1px;
+  background: url(/static/assets/images/svg/price_tag.svg?741b51a1a2f9) left top / 100% no-repeat scroll transparent;
+  padding: 0px 0px 0px 3px;
 }
 
 .credit_label {
