@@ -450,3 +450,19 @@
 .public-offerta {
     font-weight: 900;
 }
+
+/* ПРАВКИ 04.07. */
+
+.compare .owl-stage {
+    display: flex;
+    gap: 20px;
+}
+
+.compare .owl-stage .owl-item {
+    width: 100%;
+}
+
+.product__wrapper:hover div.buy__wrapper {
+    display: block;
+    text-align: center;
+}
