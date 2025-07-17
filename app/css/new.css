@@ -466,3 +466,11 @@
     display: block;
     text-align: center;
 }
+
+.infoprice {
+    align-items: flex-start;
+}
+
+.stock__wrapper img {
+    display: inline-block;
+}
